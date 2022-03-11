@@ -113,4 +113,9 @@ Remove symmetry (the directory FixSymm will be created):
 
 The last command creates the file ypp.in, which is necessary to correct, insert the directory with quasi-particle correction and the k-pathway for plot. The corrected file [ypp.in](https://github.com/Dmitry-Skachkov/Yambo_examples/blob/main/Example_2/ypp.in)  
 
+To interpolate the GW band structure:
+
+> ypp  
+
+The output of the ypp code is with the data, which can be used to plot the band structure.  
 
