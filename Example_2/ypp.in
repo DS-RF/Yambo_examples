@@ -1,0 +1,56 @@
+#                                                                     
+#  ____  ____     _       ____    ____  ______      ___               
+# |_  _||_  _|   / \     |_   \  /   _||_   _ \   ."   `.             
+#   \ \  / /    / _ \      |   \/   |    | |_) | /  .-.  \            
+#    \ \/ /    / ___ \     | |\  /| |    |  __". | |   | |            
+#    _|  |_  _/ /   \ \_  _| |_\/_| |_  _| |__) |\  `-"  /            
+#   |______||____| |____||_____||_____||_______/  `.___."             
+#                                                                     
+#                                                                     
+#                                                                     
+#       Version 5.0.4 Revision 19598 Hash 20b2ffa04                   
+#                     Branch is master                                
+#                    MPI+HDF5_IO Build                                
+#                http://www.yambo-code.org                            
+#
+electrons                        # [R] Electronic properties
+infver                           # [R] Input file variables verbosity
+bnds                             # [R] Bands
+PROJECT_mode= "none"             # Instruct ypp how to project the DOS. ATOM, LINE, PLANE.
+INTERP_mode= "NN"                # Interpolation mode (NN=nearest point, BOLTZ=boltztrap aproach)
+INTERP_Shell_Fac= 20.00000       # The bigger it is a higher number of shells is used
+INTERP_NofNN= 1                  # Number of Nearest sites in the NN method
+OutputAlat= 0.000000             # [a.u.] Lattice constant used for "alat" ouput format
+cooIn= "rlu"                     # Points coordinates (in) cc/rlu/iku/alat
+cooOut= "rlu"                    # Points coordinates (out) cc/rlu/iku/alat
+% BANDS_bands
+   1 |  10 |                         # Number of bands
+%
+CIRCUIT_E_DB_path= "none"        # SAVE obtained from the QE `bands` run (alternative to %BANDS_kpts)
+BANDS_path= ""                   # High-Symmetry points labels (G,M,K,L...) also using composed positions (0.5xY+0.5xL).
+BANDS_steps= 10                  # Number of divisions
+#BANDS_built_in                # Print the bands of the generating points of the circuit using the nearest internal point
+GfnQPdb= "none"                  # [EXTQP G] Database action
+GfnQP_INTERP_NN= 1               # [EXTQP G] Interpolation neighbours (NN mode)
+GfnQP_INTERP_shells= 20.00000    # [EXTQP G] Interpolation shells (BOLTZ mode)
+GfnQP_DbGd_INTERP_mode= "NN"     # [EXTQP G] Interpolation DbGd mode
+% GfnQP_E
+ 0.000000 | 1.000000 | 1.000000 |        # [EXTQP G] E parameters  (c/v) eV|adim|adim
+%
+GfnQP_Z= ( 1.000000 , 0.000000 )         # [EXTQP G] Z factor  (c/v)
+GfnQP_Wv_E= 0.000000       eV    # [EXTQP G] W Energy reference  (valence)
+% GfnQP_Wv
+ 0.000000 | 0.000000 | 0.000000 |        # [EXTQP G] W parameters  (valence) eV| 1|eV^-1
+%
+GfnQP_Wv_dos= 0.000000     eV    # [EXTQP G] W dos pre-factor  (valence)
+GfnQP_Wc_E= 0.000000       eV    # [EXTQP G] W Energy reference  (conduction)
+% GfnQP_Wc
+ 0.000000 | 0.000000 | 0.000000 |        # [EXTQP G] W parameters  (conduction) eV| 1 |eV^-1
+%
+GfnQP_Wc_dos= 0.000000     eV    # [EXTQP G] W dos pre-factor  (conduction)
+%BANDS_kpts                      # K points of the bands circuit
+0.00 |0.00 |0.00 |
+0.666 |-0.333 |0.000 |
+0.50 |0.00 |0.00 |
+0.00 |0.00 |0.00 |
+%
