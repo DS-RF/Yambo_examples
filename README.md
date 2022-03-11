@@ -1,4 +1,4 @@
-# Yambo installation on Stocks Supercluster of UCF
+# Yambo installation on Stokes Supercluster of UCF
 
 Copy the Yambo code from GitHub repository:
 
