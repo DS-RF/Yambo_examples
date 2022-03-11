@@ -54,3 +54,9 @@ Check yambo version:
 ```
 This is yambo - MPI+HDF5_IO - Ver. 5.0.4 Revision 19598 Hash 20b2ffa04
 ```
+
+# Example 1
+
+## Ground State Calculation as Starting Point for YAMBO
+
+In this example we follow the recommendations from https://www.paradim.org/toolbox/computation/tutorials
