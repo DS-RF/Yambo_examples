@@ -133,3 +133,9 @@ To correct *yambo2.in* file to insert QP correction:
 > KfnQPdb= "E < SAVE/ndb.QP" # [EXTQP BSK BSS] Database 
 
 The corrected file [yambo2.in](https://github.com/Dmitry-Skachkov/Yambo_examples/blob/main/Example_3/yambo2.in)  
+
+To run the GW-BSE calculation:
+
+> sbatch [job_yambo](https://github.com/Dmitry-Skachkov/Yambo_examples/blob/main/Example_3/job_yambo)  
+
+The results of GW-BSE calculation is in the file 
