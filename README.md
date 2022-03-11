@@ -67,4 +67,12 @@ To run the example:
 
 > sbatch job_QE
 
-After the calculation it is necessary to convert QE files to Yambo format. The detailed notes are here.
+After the calculation it is necessary to convert QE files to Yambo format. The detailed notes are [here](https://github.com/Dmitry-Skachkov/Yambo_examples/blob/main/Example_1/YAMBO_Tutorial-2_File_Conversion_from_QE_to_YAMBO.pdf).
+
+> cd d.save
+> p2y
+
+Check the conversion:
+
+> yambo
+
