@@ -1,0 +1,56 @@
+#                                                                     
+#  __  __   ________   ___ __ __    _______   ______                  
+# /_/\/_/\ /_______/\ /__//_//_/\ /_______/\ /_____/\                 
+# \ \ \ \ \\::: _  \ \\::\| \| \ \\::: _  \ \\:::_ \ \                
+#  \:\_\ \ \\::(_)  \ \\:.      \ \\::(_)  \/_\:\ \ \ \               
+#   \::::_\/ \:: __  \ \\:.\-/\  \ \\::  _  \ \\:\ \ \ \              
+#     \::\ \  \:.\ \  \ \\. \  \  \ \\::(_)  \ \\:\_\ \ \             
+#      \__\/   \__\/\__\/ \__\/ \__\/ \_______\/ \_____\/             
+#                                                                     
+#                                                                     
+#       Version 5.0.4 Revision 19598 Hash 20b2ffa04                   
+#                    Branch is master                                 
+#                    MPI+HDF5_IO Build                                
+#                http://www.yambo-code.org                            
+#
+optics                           # [R] Linear Response optical properties
+bss                              # [R] BSE solver
+bse                              # [R][BSE] Bethe Salpeter Equation.
+dipoles                          # [R] Oscillator strenghts (or dipoles)
+em1d                             # [R][X] Dynamically Screened Interaction
+ppa                              # [R][Xp] Plasmon Pole Approximation for the Screened Interaction
+Chimod= "HARTREE"                # [X] IP/Hartree/ALDA/LRC/PF/BSfxc
+BSEmod= "resonant"               # [BSE] resonant/retarded/coupling
+BSKmod= "SEX"                    # [BSE] IP/Hartree/HF/ALDA/SEX/BSfxc
+BSSmod= "h"                      # [BSS] (h)aydock/(d)iagonalization/(s)lepc/(i)nversion/(t)ddft`
+BSENGexx= 1137             RL    # [BSK] Exchange components
+BSENGBlk= 1                RL    # [BSK] Screened interaction block size [if -1 uses all the G-vectors of W(q,G,Gp)]
+#WehCpl                        # [BSK] eh interaction included also in coupling
+KfnQPdb= "E < SAVE/ndb.QP" # [EXTQP BSK BSS] Database
+BSEprop= "abs"                   # [BSS] abs/kerr/magn/dichr trace
+% BSEQptR
+ 1 | 1 |                             # [BSK] Transferred momenta range
+%
+% BSEBands
+   1 |  50 |                         # [BSK] Bands range
+%
+% BEnRange
+ 0.000000 | 9.999999 |         eV    # [BSS] Energy range
+%
+% BDmRange
+ 0.100000 | 0.100000 |         eV    # [BSS] Damping range
+%
+BEnSteps= 100                    # [BSS] Energy steps
+% BLongDir
+ 1.000000 | 0.000000 | 0.000000 |        # [BSS] [cc] Electric Field
+%
+BSHayTrs=-0.020000               # [BSS] Relative [o/o] Haydock threshold. Strict(>0)/Average(<0)
+% BndsRnXp
+   1 |  50 |                         # [Xp] Polarization function bands
+%
+NGsBlkXp= 1                RL    # [Xp] Response block size
+% LongDrXp
+ 0.100000E-4 |  0.00000    |  0.00000    # [Xp] [cc] Electric Field
+%
+PPAPntXp= 27.21138         eV    # [Xp] PPA imaginary energy
+XTermKind= "none"                # [X] X terminator ("none","BG" Bruneval-Gonze)
