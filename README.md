@@ -84,5 +84,11 @@ To check the conversion:
 
 ## GW Band Structure with YAMBO
 
+In order to create the input file for GW calculation:
+
+> yambo -x -g n -p p  
+> mv yambo.in yambo1.in  
+
+The detailed description of the example is here 
 
 
