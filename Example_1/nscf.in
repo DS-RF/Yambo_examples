@@ -1,0 +1,44 @@
+
+&control
+calculation = 'nscf',
+restart_mode = 'from_scratch',
+pseudo_dir = './',
+prefix = 'd',
+outdir = './',
+nstep = 100,
+wf_collect = .true.,
+verbosity = 'high',
+/
+
+&system
+ibrav = 4,
+a = 3.17520e+00,
+c = 2.00000e+01,
+nat = 3,
+ntyp = 2,
+nbnd = 50,
+ecutwfc = 10,
+occupations = 'fixed',
+smearing = 'gauss',
+vdw_corr = 'DFT-D',
+force_symmorphic = .true.,
+/
+
+&electrons
+conv_thr = 1.0d-6,
+/
+
+ATOMIC_SPECIES
+Mo 95.94000 Mo_ONCV_PBE-1.0.upf
+S 32.06600 S_ONCV_PBE-1.0.upf
+
+ATOMIC_POSITIONS (angstrom)
+S 0.002804304 0.001613133 8.429890591
+S 0.002804304 0.001613133 11.570109409
+Mo 1.582007393 0.913365735 10.000000000
+
+K_POINTS automatic
+12 12 1 0 0 0
+
+
+
