@@ -26,4 +26,6 @@ Configure the system and compile the code:
 >
 > make all
 
+After the compilation (~4hrs) the bin direcory will contain:
+
 
