@@ -67,7 +67,7 @@ All input files are here [Example_1](https://github.com/Dmitry-Skachkov/Yambo_ex
 
 To run the example (calculation time is 3s):
 
-> sbatch job_QE
+> sbatch [job_QE](https://github.com/Dmitry-Skachkov/Yambo_examples/blob/main/Example_1/job_QE)
 
 After the calculation it is necessary to convert QE files to Yambo format. The detailed notes are [here](https://github.com/Dmitry-Skachkov/Yambo_examples/blob/main/Example_1/YAMBO_Tutorial-2_File_Conversion_from_QE_to_YAMBO.pdf).
 
