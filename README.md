@@ -117,5 +117,5 @@ To interpolate the GW band structure:
 
 > ypp  
 
-The output of the ypp code is with the data, which can be used to plot the band structure.  
+The output of the ypp code is [o.bands_interpolated](https://github.com/Dmitry-Skachkov/Yambo_examples/blob/main/Example_2/o.bands_interpolated) with the data, which can be used to plot the band structure.  
 
