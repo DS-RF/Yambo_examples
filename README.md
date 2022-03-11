@@ -11,7 +11,6 @@ Go to Yambo directory:
 Load necessary modules for compilation:
 
 > module load espresso
-> 
 > module list
 
 ```
@@ -25,7 +24,6 @@ Currently Loaded Modules:
 Configure the system and compile the code:
 
 > ./configure
->
 > make all
 
 After the compilation (~4hrs) the yambo/bin direcory will contain the following executables:
