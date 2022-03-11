@@ -82,5 +82,7 @@ To check the conversion:
 
 # Example 2
 
-## GW Band Structure
+## GW Band Structure with YAMBO
+
+
 
