@@ -100,14 +100,17 @@ The yambo output with GW calculation is here [r_HF_and_locXC_gw0_dyson_em1d_ppa_
 
 How to plot band structure [YAMBO_Tutorial-3.2_Postprocessing_of_the_quasiparticle_energies_to_obtain_the_GW_band_structure.pdf](https://github.com/Dmitry-Skachkov/Yambo_examples/blob/main/Example_2/YAMBO_Tutorial-3.2_Postprocessing_of_the_quasiparticle_energies_to_obtain_the_GW_band_structure.pdf)  
 
-Generate input file for *ypp*  
+Generate input file for post-processing program *ypp*  
 > ypp -s b 
+
 Remove symmetry (the directory FixSymm will be created):
+
 > ypp -y  
 > ypp  
 > cd FixSymm  
 > yambo  
 > ypp -s b -V qp    
+
 The last command creates the file ypp.in, which is necessary to correct, insert the directory with quasi-particle correction and the k-pathway for plot. The corrected file [ypp.in](https://github.com/Dmitry-Skachkov/Yambo_examples/blob/main/Example_2/ypp.in)  
 
 
