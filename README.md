@@ -28,19 +28,19 @@ Configure the system and compile the code:
 
 After the compilation (~4hrs) the yambo/bin direcory will contain the following executables:
 ```
-> a2y  
-> c2y  
-> p2y  
-> yambo  
-> yambo_nl  
-> yambo_ph  
-> yambo_rt  
-> yambo_sc  
-> ypp  
-> ypp_nl  
-> ypp_ph  
-> ypp_rt  
-> ypp_sc
+a2y  
+c2y  
+p2y  
+yambo  
+yambo_nl  
+yambo_ph  
+yambo_rt  
+yambo_sc  
+ypp  
+ypp_nl  
+ypp_ph  
+ypp_rt  
+ypp_sc
 ```
 
 Copy the executables into default directory:
