@@ -65,7 +65,7 @@ The detailed description of the example is in the file [YAMBO_Tutorial-1_Ground_
 
 All input files are here [Example_1](https://github.com/Dmitry-Skachkov/Yambo_examples/tree/main/Example_1)
 
-To run the example:
+To run the example (calculation time is 3s):
 
 > sbatch job_QE
 
