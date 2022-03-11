@@ -84,6 +84,7 @@ To check the conversion:
 
 ## GW Band Structure with YAMBO
 
+The directory with the example [Example_2](https://github.com/Dmitry-Skachkov/Yambo_examples/tree/main/Example_2)
 In order to create the input file for GW calculation:
 
 > yambo -x -g n -p p  
