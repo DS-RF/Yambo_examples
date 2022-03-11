@@ -89,6 +89,10 @@ In order to create the input file for GW calculation:
 > yambo -x -g n -p p  
 > mv yambo.in yambo1.in  
 
-The detailed description of the example is here 
+The detailed description of the example is here [YAMBO_Tutorial-3.1_GW_Band_Structure.pdf](https://github.com/Dmitry-Skachkov/Yambo_examples/blob/main/Example_2/YAMBO_Tutorial-3.1_GW_Band_Structure.pdf)
+
+To run the GW calculation (calculation time is 3m):
+
+> sbatch job_yambo  
 
 
