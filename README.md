@@ -136,7 +136,7 @@ To correct *yambo2.in* file to insert QP correction:
 
 The corrected file [yambo2.in](https://github.com/Dmitry-Skachkov/Yambo_examples/blob/main/Example_3/yambo2.in)  
 
-To run the GW-BSE calculation:
+To run the GW-BSE calculation (calculation time is 16m):
 
 > sbatch [job_yambo](https://github.com/Dmitry-Skachkov/Yambo_examples/blob/main/Example_3/job_yambo)  
 
