@@ -42,4 +42,10 @@ After the compilation (~4hrs) the yambo/bin direcory will contain the following 
 > ypp_rt  
 > ypp_sc
 
+Check yambo version:
 
+> yambo -version
+
+```
+This is yambo - MPI+HDF5_IO - Ver. 5.0.4 Revision 19598 Hash 20b2ffa04
+```
