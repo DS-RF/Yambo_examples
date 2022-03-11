@@ -132,4 +132,4 @@ To correct *yambo2.in* file to insert QP correction:
 
 > KfnQPdb= "E < SAVE/ndb.QP" # [EXTQP BSK BSS] Database 
 
-The corrected file 
+The corrected file [yambo2.in](https://github.com/Dmitry-Skachkov/Yambo_examples/blob/main/Example_3/yambo2.in)  
