@@ -93,6 +93,6 @@ The detailed description of the example is here [YAMBO_Tutorial-3.1_GW_Band_Stru
 
 To run the GW calculation (calculation time is 3m):
 
-> sbatch job_yambo  
+> sbatch [job_yambo](https://github.com/Dmitry-Skachkov/Yambo_examples/blob/main/Example_2/job_yambo)  
 
 The yambo output with GW calculation is here [r_HF_and_locXC_gw0_dyson_em1d_ppa_01](https://github.com/Dmitry-Skachkov/Yambo_examples/blob/main/Example_2/r_HF_and_locXC_gw0_dyson_em1d_ppa_01) 
