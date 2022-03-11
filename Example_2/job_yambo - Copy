@@ -1,0 +1,29 @@
+#!/bin/bash
+#SBATCH --time=1:00:00
+#SBATCH --nodes=1 
+#SBATCH --ntasks-per-node=48
+#SBATCH --job-name=test_yambo
+#SBATCH --mail-type=END
+#SBATCH --account=<account name>
+#SBATCH --mail-user=<email@gmail.com>
+#SBATCH --error=error.txt
+#SBATCH --output=output.txt
+ 
+module load espresso
+
+export MV2_ENABLE_AFFINITY=0 
+export I_MPI_PIN_DOMAIN=auto 
+export I_MPI_PIN_ORDER=bunch 
+export KMP_AFFINITY=compact,granularity=fine,1 
+export OMP_NUM_THREADS=1
+
+PPN=$(( $SLURM_TASKS_PER_NODE / $OMP_NUM_THREADS ))
+echo "PPN = $PPN"
+
+### Yambo
+mpirun   -np $PPN  yambo -F yambo1.in > yambo1.out
+ 
+
+
+
+
