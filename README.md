@@ -71,11 +71,11 @@ To run the example:
 
 After the calculation it is necessary to convert QE files to Yambo format. The detailed notes are [here](https://github.com/Dmitry-Skachkov/Yambo_examples/blob/main/Example_1/YAMBO_Tutorial-2_File_Conversion_from_QE_to_YAMBO.pdf).
 
-> cd d.save
-> p2y
+> cd d.save  
+> p2y  
 
 The program p2y creates directory SAVE with converted files.
 Check the conversion:
 
-> yambo
+> yambo  
 
