@@ -60,3 +60,11 @@ This is yambo - MPI+HDF5_IO - Ver. 5.0.4 Revision 19598 Hash 20b2ffa04
 ## Ground State Calculation as Starting Point for YAMBO
 
 In this example we follow the recommendations from https://www.paradim.org/toolbox/computation/tutorials
+
+The detailed description of the example is in the file [pdf](https://github.com/Dmitry-Skachkov/Yambo_examples/blob/main/Example_1/YAMBO_Tutorial-1_Ground_State_Calculation_as_Starting_Point_for_YAMBO.pdf)
+
+To run the example:
+
+> sbatch job_QE
+
+
