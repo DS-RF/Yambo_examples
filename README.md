@@ -67,4 +67,4 @@ To run the example:
 
 > sbatch job_QE
 
-
+After the calculation it is necessary to convert QE files to Yambo format. The detailed notes are here.
