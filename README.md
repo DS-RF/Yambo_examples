@@ -108,6 +108,6 @@ Remove symmetry (the directory FixSymm will be created):
 > cd FixSymm  
 > yambo  
 > ypp -s b -V qp    
-The last command creates the file ypp.in, which is necessary to correct, insert the directory with quasi-particle correction and the k-pathway for plot. The corrected file ypp.in
+The last command creates the file ypp.in, which is necessary to correct, insert the directory with quasi-particle correction and the k-pathway for plot. The corrected file [ypp.in](https://github.com/Dmitry-Skachkov/Yambo_examples/blob/main/Example_2/ypp.in)  
 
 
