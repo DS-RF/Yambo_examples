@@ -95,4 +95,4 @@ To run the GW calculation (calculation time is 3m):
 
 > sbatch job_yambo  
 
-
+The yambo output with GW calculation is here [r_HF_and_locXC_gw0_dyson_em1d_ppa_01](https://github.com/Dmitry-Skachkov/Yambo_examples/blob/main/Example_2/r_HF_and_locXC_gw0_dyson_em1d_ppa_01) 
