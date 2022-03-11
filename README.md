@@ -63,6 +63,8 @@ In this example we follow the recommendations from https://www.paradim.org/toolb
 
 The detailed description of the example is in the file [YAMBO_Tutorial-1_Ground_State_Calculation_as_Starting_Point_for_YAMBO.pdf](https://github.com/Dmitry-Skachkov/Yambo_examples/blob/main/Example_1/YAMBO_Tutorial-1_Ground_State_Calculation_as_Starting_Point_for_YAMBO.pdf)
 
+All input files are here [Example_1](https://github.com/Dmitry-Skachkov/Yambo_examples/tree/main/Example_1)
+
 To run the example:
 
 > sbatch job_QE
@@ -72,6 +74,7 @@ After the calculation it is necessary to convert QE files to Yambo format. The d
 > cd d.save
 > p2y
 
+The program p2y creates directory SAVE with converted files.
 Check the conversion:
 
 > yambo
