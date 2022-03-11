@@ -126,4 +126,10 @@ The output of the ypp code is [o.bands_interpolated](https://github.com/Dmitry-S
 To generate the input file for the GW-BSE calculation:
 
 > yambo -o b -k sex -y h  
+> mv yambo.in yambo2.in  
 
+To correct *yambo2.in* file to insert QP correction:
+
+> KfnQPdb= "E < SAVE/ndb.QP" # [EXTQP BSK BSS] Database 
+
+The corrected file 
