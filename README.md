@@ -74,7 +74,7 @@ After the calculation it is necessary to convert QE files to Yambo format. The d
 > cd d.save  
 > p2y  
 
-The program p2y creates directory SAVE with converted files.
+The program *p2y* creates directory SAVE with converted files.
 Check the conversion:
 
 > yambo  
