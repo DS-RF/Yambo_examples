@@ -42,6 +42,10 @@ After the compilation (~4hrs) the yambo/bin direcory will contain the following 
 > ypp_rt  
 > ypp_sc
 
+Copy the executables into default directory:
+
+> cp yambo/bin/* ~/bin/
+
 Check yambo version:
 
 > yambo -version
