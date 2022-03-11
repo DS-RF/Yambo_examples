@@ -11,6 +11,7 @@ Go to Yambo directory:
 Load necessary modules for compilation:
 
 > module load espresso
+> 
 > module list
 
 Currently Loaded Modules:
