@@ -127,7 +127,8 @@ The output of the ypp code is [o.bands_interpolated](https://github.com/Dmitry-S
 
 ## Calculation of Optical Properties with YAMBO
 
-The detailed description of the example [YAMBO_Tutorial-4_Calculation_of_Optical_Properties_with_YAMBO.pdf](https://github.com/Dmitry-Skachkov/Yambo_examples/blob/main/Example_3/YAMBO_Tutorial-4_Calculation_of_Optical_Properties_with_YAMBO.pdf) 
+The detailed description of the example [YAMBO_Tutorial-4_Calculation_of_Optical_Properties_with_YAMBO.pdf](https://github.com/Dmitry-Skachkov/Yambo_examples/blob/main/Example_3/YAMBO_Tutorial-4_Calculation_of_Optical_Properties_with_YAMBO.pdf)   
+
 This example is taken from https://www.paradim.org/toolbox/computation/tutorials  
 
 In order to run this example it is necessary to run Example 1 at first and convert QE results to Yambo format. 
