@@ -84,6 +84,8 @@ To check the conversion:
 
 ## GW Band Structure with YAMBO
 
+This example is taken from https://www.paradim.org/toolbox/computation/tutorials  
+
 The directory with the example [Example_2](https://github.com/Dmitry-Skachkov/Yambo_examples/tree/main/Example_2)  
 In order to create the input file for GW calculation:
 
