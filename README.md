@@ -59,9 +59,9 @@ This is yambo - MPI+HDF5_IO - Ver. 5.0.4 Revision 19598 Hash 20b2ffa04
 
 ## Ground State Calculation as Starting Point for YAMBO
 
-In this example we follow the recommendations from https://www.paradim.org/toolbox/computation/tutorials
+In this example we follow the recommendations from [https://www.paradim.org](https://www.paradim.org/toolbox/computation/tutorials)
 
-The detailed description of the example is in the file [YAMBO_Tutorial-1_Ground_State_Calculation_as_Starting_Point_for_YAMBO.pdf](https://github.com/Dmitry-Skachkov/Yambo_examples/blob/main/Example_1/YAMBO_Tutorial-1_Ground_State_Calculation_as_Starting_Point_for_YAMBO.pdf)
+The detailed description of the example is in the [pdf file](https://github.com/Dmitry-Skachkov/Yambo_examples/blob/main/Example_1/YAMBO_Tutorial-1_Ground_State_Calculation_as_Starting_Point_for_YAMBO.pdf)
 
 All input files are here [Example_1](https://github.com/Dmitry-Skachkov/Yambo_examples/tree/main/Example_1)
 
@@ -84,7 +84,7 @@ To check the conversion:
 
 ## GW Band Structure with YAMBO
 
-This example is taken from https://www.paradim.org/toolbox/computation/tutorials  
+This example is taken from [https://www.paradim.org](https://www.paradim.org/toolbox/computation/tutorials)   
 
 In order to run this example it is necessary to run Example 1 at first and convert QE results to Yambo format. 
 
