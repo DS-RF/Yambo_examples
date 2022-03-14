@@ -94,7 +94,7 @@ In order to create the input file for GW calculation:
 > yambo -x -g n -p p  
 > mv yambo.in yambo1.in  
 
-The detailed description of the example is here [YAMBO_Tutorial-3.1_GW_Band_Structure.pdf](https://github.com/Dmitry-Skachkov/Yambo_examples/blob/main/Example_2/YAMBO_Tutorial-3.1_GW_Band_Structure.pdf)
+The detailed description of the example is [here](https://github.com/Dmitry-Skachkov/Yambo_examples/blob/main/Example_2/YAMBO_Tutorial-3.1_GW_Band_Structure.pdf)
 
 To run the GW calculation (calculation time is 3m):
 
@@ -129,7 +129,7 @@ The output of the ypp code is [o.bands_interpolated](https://github.com/Dmitry-S
 
 The detailed description of the example [YAMBO_Tutorial-4_Calculation_of_Optical_Properties_with_YAMBO.pdf](https://github.com/Dmitry-Skachkov/Yambo_examples/blob/main/Example_3/YAMBO_Tutorial-4_Calculation_of_Optical_Properties_with_YAMBO.pdf)   
 
-This example is taken from https://www.paradim.org/toolbox/computation/tutorials  
+This example is taken from [https://www.paradim.org](https://www.paradim.org/toolbox/computation/tutorials)  
 
 In order to run this example it is necessary to run Example 1 at first and convert QE results to Yambo format. 
 
