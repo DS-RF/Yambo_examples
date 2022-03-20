@@ -84,6 +84,8 @@ To check the conversion:
 
 ## GW Band Structure with YAMBO
 
+### Run GW
+
 This example is taken from [https://www.paradim.org](https://www.paradim.org/toolbox/computation/tutorials)   
 
 In order to run this example it is necessary to run Example 1 at first and convert QE results to Yambo format. 
@@ -101,6 +103,8 @@ To run the GW calculation (calculation time is 3m):
 > sbatch [job_yambo](https://github.com/Dmitry-Skachkov/Yambo_examples/blob/main/Example_2/job_yambo)  
 
 The yambo output with GW calculation is here [r_HF_and_locXC_gw0_dyson_em1d_ppa_01](https://github.com/Dmitry-Skachkov/Yambo_examples/blob/main/Example_2/r_HF_and_locXC_gw0_dyson_em1d_ppa_01)  
+
+### Plot Band Structure 
 
 How to plot band structure [YAMBO_Tutorial-3.2_Postprocessing_of_the_quasiparticle_energies_to_obtain_the_GW_band_structure.pdf](https://github.com/Dmitry-Skachkov/Yambo_examples/blob/main/Example_2/YAMBO_Tutorial-3.2_Postprocessing_of_the_quasiparticle_energies_to_obtain_the_GW_band_structure.pdf)  
 
