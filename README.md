@@ -114,6 +114,9 @@ Generate input file for post-processing program *ypp*
 Remove symmetry (the directory FixSymm will be created):
 
 > ypp -y  
+
+Correct input file by uncomment **RmTimeRev**.
+
 > ypp  
 > cd FixSymm  
 > yambo  
