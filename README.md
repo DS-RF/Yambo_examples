@@ -1,6 +1,7 @@
 # YAMBO usage
 
-* [Yambo installation](https://github.com/Dmitry-Skachkov/Yambo_examples#yambo-installation-on-stokes-supercluster-of-ucf)
+* [Yambo installation](https://github.com/Dmitry-Skachkov/Yambo_examples#yambo-installation-on-stokes-supercluster-of-ucf)  
+* [Example 1. Ground state calculation](https://github.com/Dmitry-Skachkov/Yambo_examples/blob/main/README.md#example-1)
 
 
 # Yambo installation on Stokes Supercluster of UCF
