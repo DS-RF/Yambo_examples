@@ -23,7 +23,7 @@ Currently Loaded Modules:
 
 Configure the system and compile the code:
 
-> ./configure  
+> ./configure --enable-memory-profile --enable-dp   
 > make all  
 
 After the compilation (~4hrs) the yambo/bin directory will contain the following executables:
