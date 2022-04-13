@@ -13,9 +13,8 @@ Copy the Yambo code from GitHub repository:
 
 > git clone https://github.com/yambo-code/yambo.git  
 
-If you need to update the code from the GitHub   
+If you need to update the code from the GitHub (from *yambo* directory):   
   
-> cd yambo   
 > git pull origin master   
 
 
