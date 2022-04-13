@@ -2,7 +2,8 @@
 
 * [Yambo installation](https://github.com/Dmitry-Skachkov/Yambo_examples#yambo-installation-on-stokes-supercluster-of-ucf)  
 * [Example 1. Ground state calculation](https://github.com/Dmitry-Skachkov/Yambo_examples/blob/main/README.md#example-1)  
-* [Example 2. GW calculation](https://github.com/Dmitry-Skachkov/Yambo_examples/blob/main/README.md#example-2)
+* [Example 2. GW band structure](https://github.com/Dmitry-Skachkov/Yambo_examples/blob/main/README.md#example-2)  
+* [Example 3. Optical properties](https://github.com/Dmitry-Skachkov/Yambo_examples/blob/main/README.md#example-3)
 
 
 # Yambo installation on Stokes Supercluster of UCF
