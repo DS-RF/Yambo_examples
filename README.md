@@ -1,6 +1,6 @@
 # YAMBO usage
 
-[Yambo installation]
+* [Yambo installation](https://github.com/Dmitry-Skachkov/Yambo_examples#yambo-installation-on-stokes-supercluster-of-ucf)
 
 
 # Yambo installation on Stokes Supercluster of UCF
