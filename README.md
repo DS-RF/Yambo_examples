@@ -234,6 +234,8 @@ Here are few examples of running Yambo on 10 nodes with 48 cores:
   1  24  10   1  10  24      2              2h54m
   1  12  10   1  10  12      4              2h54m
 ```   
+The job running script for 1 OpenMP thread [job_yambo_10x48_4](https://github.com/Dmitry-Skachkov/Yambo_examples/blob/main/Example_4/job_yambo_10x48_1)
+The job running script for 2 OpenMP threads [job_yambo_10x48_4](https://github.com/Dmitry-Skachkov/Yambo_examples/blob/main/Example_4/job_yambo_10x48_2)
 The job running script for 4 OpenMP threads [job_yambo_10x48_4](https://github.com/Dmitry-Skachkov/Yambo_examples/blob/main/Example_4/job_yambo_10x48_4)
 
 
