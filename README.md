@@ -205,7 +205,7 @@ The optimized running job script is [job_QE_2x48](https://github.com/Dmitry-Skac
 
 ### Yambo GW on 10 nodes
 
-Yambo code has several levels of paralelization. The parameters of paralelization are in input file *yambo.in*:
+Yambo code has several levels of paralelization. The parameters for paralelization can be placed in input file *yambo.in*:
 
 ```
 NLogCPUs = 10                               # [PARALLEL] Live-timing CPU`s (0 for all)
