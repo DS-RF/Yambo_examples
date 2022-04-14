@@ -205,6 +205,20 @@ The optimized running job script is [job_QE_2x48](https://github.com/Dmitry-Skac
 
 ### Yambo GW on 10 nodes
 
+Yambo code has several levels of paralelization. The parameters of paralelization are in input file *yambo.in*:
+
+```
+NLogCPUs = 10                               # [PARALLEL] Live-timing CPU`s (0 for all)
+X_nCPU_LinAlg_INV=1                         # [PARALLEL] CPUs for Linear Algebra
+DIP_CPU= "2 24 10"                          # [PARALLEL] CPUs for each role
+DIP_ROLEs= "k c v"                          # [PARALLEL] CPUs roles (k,c,v)
+SE_CPU= "1 10 48"                           # [PARALLEL] CPUs for each role
+SE_ROLEs= "q qp b"                          # [PARALLEL] CPUs roles (q,qp,b)
+X_Threads= 1                                # [OPENMP/X] Number of threads for response functions
+DIP_Threads= 1                              # [OPENMP/X] Number of threads for dipoles
+SE_Threads= 1                               # [OPENMP/GW] Number of threads for self-energy
+```
+
 
 
 
