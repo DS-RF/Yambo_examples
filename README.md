@@ -201,7 +201,7 @@ Here are the test results for calculation time running QE on 2 nodes with 48 cor
  1    2    1    1    2    1m19s
  1    2    2    1    2    1m15s
 ```
-The optimized running job script is [job_QE_2x48](https://github.com/Dmitry-Skachkov/Yambo_examples/blob/main/Example_4/job_QE_2x48) 
+The optimized running job script for 2 nodes is [job_QE_2x48](https://github.com/Dmitry-Skachkov/Yambo_examples/blob/main/Example_4/job_QE_2x48)    
 Please note that optimized parameters depend on particular compiled version of QE (including scalapack or not) and particular system.
 
 ### Yambo GW on 10 nodes
