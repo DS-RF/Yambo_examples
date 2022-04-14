@@ -21,7 +21,7 @@ PPN=$(( $SLURM_TASKS_PER_NODE / $OMP_NUM_THREADS ))
 echo "PPN = $PPN"
 
 ### Yambo
-mpirun   -np $PPN  yambo -F yambo2.in > yambo2.out
+mpirun   -np $PPN  yambo -F yambo2.in
  
 
 
