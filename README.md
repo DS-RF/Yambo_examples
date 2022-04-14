@@ -184,7 +184,7 @@ QE has several levels of parallelization. The parallelization scheme can be mani
 
 For detailed description see https://www.quantum-espresso.org/Doc/user_guide/node20.html The default values are equal to 1.     
 
-Here the test results for calculation time running QE on 2 nodes with 48 cores on Stokes supercluster of UCF:   
+Here are the test results for calculation time running QE on 2 nodes with 48 cores on Stokes supercluster of UCF:   
 
 ```
  ni  nk   nt   nd   nb   t_calc.
