@@ -9,18 +9,14 @@
 
 # Yambo installation on Stokes Supercluster of UCF
 
-Copy the Yambo code from GitHub repository:
+Copy Yambo code and unpack:  
 
-> git clone https://github.com/yambo-code/yambo.git  
-
-If you need to update the code from the GitHub (from *yambo* directory):   
-  
-> git pull origin master   
-
+> wget https://github.com/yambo-code/yambo/archive/refs/tags/5.0.4.zip  
+> tar -xvf 5.0.4.zip
 
 Go to Yambo directory:
 
-> cd yambo
+> cd yambo_5.0.4  
 
 Load necessary modules for compilation:
 
