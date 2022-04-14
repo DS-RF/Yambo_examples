@@ -3,10 +3,10 @@
 #SBATCH --nodes=2 
 #SBATCH --ntasks-per-node=48
 #SBATCH --mem=384000
-#SBATCH --job-name=MoS2_acc_50_18x18_10
+#SBATCH --job-name=NAME
 #SBATCH --mail-type=END
-#SBATCH --account=mleuenberger
-#SBATCH --mail-user=d.g.skachkov@gmail.com
+#SBATCH --account=ACCOUNT
+#SBATCH --mail-user=EMAIL@gmail.com
 #SBATCH --error=error.txt
 #SBATCH --output=output.txt
  
