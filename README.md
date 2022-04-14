@@ -207,7 +207,7 @@ For larger number of nodes, probably, the optimized parameters for parallelizati
 
 ### Yambo GW on 10 nodes
 
-Yambo code has several levels of paralelization. The parameters for paralelization can be placed in input file *yambo.in*:
+Yambo code has several levels of paralelization. The parameters for paralelization can be placed in input file [yambo.in](https://github.com/Dmitry-Skachkov/Yambo_examples/blob/main/Example_4/yambo1.in):
 
 ```
 NLogCPUs = 10                               # [PARALLEL] Live-timing CPU`s (0 for all)
