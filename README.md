@@ -235,4 +235,4 @@ The job running script for 1 OpenMP thread [job_yambo_10x48_1](https://github.co
 The job running script for 2 OpenMP threads [job_yambo_10x48_2](https://github.com/Dmitry-Skachkov/Yambo_examples/blob/main/Example_4/job_yambo_10x48_2)   
 The job running script for 4 OpenMP threads [job_yambo_10x48_4](https://github.com/Dmitry-Skachkov/Yambo_examples/blob/main/Example_4/job_yambo_10x48_4)   
 
-Please note, that in order to use hybrid OpenMP/MPI calculation you need to have hybrid OpenMP/MPI compiled version of Yambo. 
+Please note, that in order to use hybrid OpenMP/MPI calculation you need to have hybrid OpenMP/MPI compiled version of Yambo, and in order to use parallel calculation for linear algebra (X_nCPU_LinAlg_INV=480) you need to compile Yambo with ScaLapack library. 
