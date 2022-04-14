@@ -9,7 +9,7 @@
 
 # Yambo installation on Stokes Supercluster of UCF
 
-Copy Yambo code and unpack:  
+Copy the latest release of Yambo code and unpack:  
 
 > wget https://github.com/yambo-code/yambo/archive/refs/tags/5.0.4.zip  
 > tar -xvf 5.0.4.zip
@@ -55,7 +55,7 @@ ypp_sc
 
 Copy the executables into default directory:
 
-> cp yambo/bin/* ~/bin/
+> cp yambo_5.0.4/bin/* ~/bin/
 
 Check yambo version:
 
