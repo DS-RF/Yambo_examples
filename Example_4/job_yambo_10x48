@@ -1,0 +1,36 @@
+#!/bin/bash
+#SBATCH --time=24:00:00
+#SBATCH --nodes=10 
+#SBATCH --ntasks-per-node=48
+#SBATCH --cpus-per-task=1
+#SBATCH --mem=384000
+#SBATCH --job-name=MoS2_acc_50_18x18_11
+#SBATCH --mail-type=END
+#SBATCH --account=mleuenberger
+#SBATCH --mail-user=d.g.skachkov@gmail.com
+#SBATCH --error=error.txt
+#SBATCH --output=output.txt
+ 
+module load espresso
+
+export MV2_ENABLE_AFFINITY=0 
+export I_MPI_PIN_DOMAIN=auto 
+export I_MPI_PIN_ORDER=bunch 
+export KMP_AFFINITY=compact,granularity=fine,1 
+export OMP_NUM_THREADS=1
+
+#echo "SLURM_NTASKS_PER_NODE = $SLURM_NTASKS_PER_NODE" 
+#echo "SLURM_JOB_NUM_NODES   = $SLURM_JOB_NUM_NODES" 
+#echo "OMP_NUM_THREADS       = $OMP_NUM_THREADS"
+
+PPN=$(( $SLURM_NTASKS_PER_NODE * $SLURM_JOB_NUM_NODES / $OMP_NUM_THREADS ))
+echo "number of MPI processes PPN = $PPN"
+echo "number of OpenMP threads OMP_NUM_THREADS = $OMP_NUM_THREADS"
+
+### Yambo
+mpirun   -np $PPN  yambo -F yambo1.in 
+ 
+
+
+
+
