@@ -226,7 +226,11 @@ The detailed description of these parameters is [here](http://www.yambo-code.org
 Here are few examples of running Yambo on 10 nodes with 48 cores:
 
 ```
-
+  k   c   v   q  qp   b  OpenMP threads    t_calc.
+  6   4  20   1  10  48      1              2h45m
+  1  24  20   1  10  48      1              3h1m
+  2  24  10   1  10  48      1              2h54m
+  
 ```   
 
 
