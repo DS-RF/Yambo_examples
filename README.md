@@ -219,6 +219,6 @@ DIP_Threads= 1                              # [OPENMP/X] Number of threads for d
 SE_Threads= 1                               # [OPENMP/GW] Number of threads for self-energy
 ```
 
-
+The detailed description of these parameters is [here](http://www.yambo-code.org/wiki/index.php?title=GW_parallel_strategies)
 
 
