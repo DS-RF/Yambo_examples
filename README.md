@@ -201,7 +201,7 @@ Here the test results for calculation time running QE on 2 nodes with 48 cores o
  1    1    1   16    1    5m32s
  1    2    2   16    2    5m59s
 ```
-
+The optimized running job script is [job_QE_2x48](https://github.com/Dmitry-Skachkov/Yambo_examples/blob/main/Example_4/job_QE_2x48) 
 
 ### Yambo GW on 10 nodes
 
