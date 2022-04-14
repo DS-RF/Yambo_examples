@@ -193,7 +193,7 @@ Here the test results for calculation time running QE on 2 nodes with 48 cores o
  1    2    1   16    2    3m41s
  1    2    1    4    2    1m40s
  1    2    1    1    2    1m19s
- **1    2    2    1    2    1m15s**
+ 1    2    2    1    2    1m15s
  1    2    2    1    4    1m28s
  1    2    2    1    8    2m34s
  1    1    1    1    1    2m32s
