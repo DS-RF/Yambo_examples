@@ -24,8 +24,8 @@ echo "number of MPI processes   = $PPN"
 echo "number of OpenMP threads  = $OMP_NUM_THREADS"
 
 ### Quantum Espresso:
-mpirun -np $PPN pw.x -ni 1 -nk 2 -nt 2 -nd 1 -nb 2 -input scf.in > scf.out
-mpirun -np $PPN pw.x -ni 1 -nk 1 -nt 1 -nd 1 -nb 1 -input nscf.in > nscf.out
+mpirun -np $PPN pw.x -ni 1 -nk 2  -nt 2 -nd 1 -nb 2 -input scf.in > scf.out
+mpirun -np $PPN pw.x -ni 1 -nk 12 -nt 1 -nd 1 -nb 1 -input nscf.in > nscf.out
 
 ### Convert to Yambo: 
 cd d.save
