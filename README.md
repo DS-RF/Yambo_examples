@@ -228,6 +228,7 @@ Here are few examples of running Yambo on 10 nodes with 48 cores:
 ```
   k   c   v   q  qp   b  OpenMP threads    t_calc.
   6   4  20   1  10  48      1              2h45m
+  6   4  20   2  10  24      1              2h45m
   1  24  20   1  10  48      1              3h1m
   2  24  10   1  10  48      1              2h54m
   1  24  10   1  10  24      2              2h54m
