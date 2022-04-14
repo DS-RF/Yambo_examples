@@ -22,11 +22,11 @@ EXXRLvcs=  56577           RL    # [XX] Exchange    RL components
 VXCRLvcs=  56577           RL    # [XC] XCpotential RL components
 Chimod= "HARTREE"                # [X] IP/Hartree/ALDA/LRC/PF/BSfxc
 % BndsRnXp
-   1 |  50 |                         # [Xp] Polarization function bands
+   1 |  50 |                     # [Xp] Polarization function bands
 %
 NGsBlkXp= 1                RL    # [Xp] Response block size
 % LongDrXp
- 1.000000 | 0.000000 | 0.000000 |        # [Xp] [cc] Electric Field
+ 1.000000 | 0.000000 | 0.000000 |# [Xp] [cc] Electric Field
 %
 PPAPntXp= 27.21138         eV    # [Xp] PPA imaginary energy
 XTermKind= "none"                # [X] X terminator ("none","BG" Bruneval-Gonze)
@@ -40,14 +40,14 @@ GWIter=0                         # [GW] GW  self-consistent (evGW)  iterations o
 %QPkrange                        # [GW] QP generalized Kpoint/Band indices
 1|324|1|50|
 %
-NLogCPUs = 10                               # [PARALLEL] Live-timing CPU`s (0 for all)
-X_nCPU_LinAlg_INV=1                         # [PARALLEL] CPUs for Linear Algebra
-DIP_CPU= "1 12 10"                          # [PARALLEL] CPUs for each role
-DIP_ROLEs= "k c v"                          # [PARALLEL] CPUs roles (k,c,v)
-SE_CPU= "1 10 12"                           # [PARALLEL] CPUs for each role
-SE_ROLEs= "q qp b"                          # [PARALLEL] CPUs roles (q,qp,b)
-X_Threads= 0                                # [OPENMP/X] Number of threads for response functions
-DIP_Threads= 0                              # [OPENMP/X] Number of threads for dipoles
-SE_Threads= 0                               # [OPENMP/GW] Number of threads for self-energy
+NLogCPUs = 10                    # [PARALLEL] Live-timing CPU`s (0 for all)
+X_nCPU_LinAlg_INV=1              # [PARALLEL] CPUs for Linear Algebra
+DIP_ROLEs= "k c v"               # [PARALLEL] CPUs roles (k,c,v)
+DIP_CPU= "1 12 10"               # [PARALLEL] CPUs for each role
+SE_ROLEs= "q qp b"               # [PARALLEL] CPUs roles (q,qp,b)
+SE_CPU= "1 10 12"                # [PARALLEL] CPUs for each role
+X_Threads= 0                     # [OPENMP/X] Number of threads for response functions
+DIP_Threads= 0                   # [OPENMP/X] Number of threads for dipoles
+SE_Threads= 0                    # [OPENMP/GW] Number of threads for self-energy
 
 
