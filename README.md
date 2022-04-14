@@ -188,18 +188,18 @@ Here the test results for calculation time running QE on 2 nodes with 48 cores o
 
 ```
  ni  nk   nt   nd   nb   t_calc.
- 1    2    1    4    4    1m38s
- 1    4    1    4    4    1m45s
- 1    2    1   16    2    3m41s
- 1    2    1    4    2    1m40s
- 1    2    1    1    2    1m19s
- 1    2    2    1    2    1m15s
- 1    2    2    1    4    1m28s
- 1    2    2    1    8    2m34s
  1    1    1    1    1    2m32s
  1    1    1    4    1    3m13s
  1    1    1   16    1    5m32s
  1    2    2   16    2    5m59s
+ 1    2    1   16    2    3m41s
+ 1    2    2    1    8    2m34s
+ 1    2    1    4    4    1m38s
+ 1    4    1    4    4    1m45s
+ 1    2    2    1    4    1m28s
+ 1    2    1    4    2    1m40s
+ 1    2    1    1    2    1m19s
+ 1    2    2    1    2    1m15s
 ```
 The optimized running job script is [job_QE_2x48](https://github.com/Dmitry-Skachkov/Yambo_examples/blob/main/Example_4/job_QE_2x48) 
 
