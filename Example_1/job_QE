@@ -21,10 +21,10 @@ PPN=$(( $SLURM_TASKS_PER_NODE / $OMP_NUM_THREADS ))
 echo "PPN = $PPN"
 
 ### Quantum Espresso scf
-mpirun -ppn $PPN pw.x -ni 1 -nk 1 -nt 1 -nd 16 -nb 1 -input scf.in > scf.out
+mpirun -ppn $PPN pw.x -ni 1 -nk 1 -nt 1 -nd 1 -nb 1 -input scf.in > scf.out
 
 ### Quantum Espresso nscf
-mpirun -ppn $PPN pw.x -ni 1 -nk 1 -nt 1 -nd 16 -nb 1 -input nscf.in > nscf.out
+mpirun -ppn $PPN pw.x -ni 1 -nk 1 -nt 1 -nd 1 -nb 1 -input nscf.in > nscf.out
 
 
 
