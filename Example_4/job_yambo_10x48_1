@@ -1,13 +1,13 @@
 #!/bin/bash
+#SBATCH --job-name=TASK_NAME
 #SBATCH --time=24:00:00
 #SBATCH --nodes=10 
 #SBATCH --ntasks-per-node=48
 #SBATCH --cpus-per-task=1
 #SBATCH --mem=384000
-#SBATCH --job-name=TASK_NAME
-#SBATCH --mail-type=END
 #SBATCH --account=ACCOUNT_NAME
 #SBATCH --mail-user=EMAIL@gmail.com
+#SBATCH --mail-type=END
 #SBATCH --error=error.txt
 #SBATCH --output=output.txt
  
