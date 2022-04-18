@@ -201,7 +201,7 @@ Here are the test results for calculation time running QE on 2 nodes with 48 cor
  1    2    1    4    4    1m38s
  1    2    2    1    4    1m28s
  1    2    1    1    2    1m19s
- 1    2    2    1    2    1m15s
+ 1    2    2    1    2    1m15s      <-- optimized
 ```
 The optimized running job script for 2 nodes is [job_QE_2x48](https://github.com/Dmitry-Skachkov/Yambo_examples/blob/main/Example_4/job_QE_2x48)    
 Please note that optimized parameters depend on particular compiled version of QE (including scalapack or not) and particular system. Please also note, that for nscf calculation the optimized parameters will be different than for scf.    
@@ -232,7 +232,7 @@ Here are few examples of running Yambo on 10 nodes with 48 cores:
   1  24  20   1  10  48      1              3h1m
   2  24  10   1  10  48      1              2h54m
   6   4  20   1  10  48      1              2h45m
-  6   4  20   2  10  24      1              2h10m
+  6   4  20   2  10  24      1              2h10m     <-- optimized
   6   4  20   4  10  12      1              3h47m
 ```   
 The job running script for 1 OpenMP thread [job_yambo_10x48_1](https://github.com/Dmitry-Skachkov/Yambo_examples/blob/main/Example_4/job_yambo_10x48_1)   
