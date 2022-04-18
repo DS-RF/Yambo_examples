@@ -36,6 +36,8 @@ Configure the system and compile the code:
 > ./configure --enable-memory-profile --enable-dp   
 > make all  
 
+The flag --enable-memory-profile is necessary in order to have information in Yambo output about used memory, and the flag --enable-dp asks to compile the code with double precision necessary for optical calculations.  
+
 After the compilation (~4hrs) the yambo/bin directory will contain the following executables:
 ```
 a2y  
