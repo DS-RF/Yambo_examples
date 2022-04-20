@@ -214,6 +214,7 @@ Yambo code has several levels of paralelization. The parameters for paralelizati
 ```
 NLogCPUs = 10                               # [PARALLEL] Live-timing CPU`s (0 for all)
 X_nCPU_LinAlg_INV=1                         # [PARALLEL] CPUs for Linear Algebra (for ScaLapack)
+PAR_def_mode= "memory"                      # [PARALLEL] Default distribution mode ("balanced"/"memory"/"workload")
 
 DIP_CPU= "2 10 24"                          # [PARALLEL Dipoles] CPUs for each role
 DIP_ROLEs= "k c v"                          # [PARALLEL Dipoles] CPUs roles (k,c,v)
