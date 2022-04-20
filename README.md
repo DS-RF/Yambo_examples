@@ -215,8 +215,8 @@ Yambo code has several levels of paralelization. The parameters for paralelizati
 NLogCPUs = 10                               # [PARALLEL] Live-timing CPU`s (0 for all)
 X_nCPU_LinAlg_INV=1                         # [PARALLEL] CPUs for Linear Algebra
 DIP_CPU= "2 24 10"                          # [PARALLEL] CPUs for each role
-DIP_ROLEs= "k c v"                          # [PARALLEL] CPUs roles (k,c,v)
-SE_CPU= "1 10 48"                           # [PARALLEL] CPUs for each role
+DIP_ROLEs= "g k c v"                        # [PARALLEL] CPUs roles (k,c,v)
+SE_CPU= "1 1 10 48"                         # [PARALLEL] CPUs for each role
 SE_ROLEs= "q qp b"                          # [PARALLEL] CPUs roles (q,qp,b)
 X_Threads= 1                                # [OPENMP/X] Number of threads for response functions
 DIP_Threads= 1                              # [OPENMP/X] Number of threads for dipoles
@@ -227,11 +227,11 @@ The detailed description of these parameters is [here](http://www.yambo-code.org
 
 ```
 g      parallelism over G-vectors   
-q      parallelism over transferred momenta   
-c/v    parallelism over conduction/valence bands   
 k      parallelism over k-points   
-qp      parallelism over qp corrections to be computed  (nk)
-b       parallelism over (occupied) density matrix (or Green's function) bands  (m)
+c/v    parallelism over conduction/valence bands   
+q      parallelism over transferred momenta   
+qp     parallelism over qp corrections to be computed  (nk)
+b      parallelism over (occupied) density matrix (or Green's function) bands  (m)
 ```
 
 Here are few examples of running Yambo on 10 nodes with 48 cores:
