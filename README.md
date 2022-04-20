@@ -225,10 +225,14 @@ SE_Threads= 1                               # [OPENMP/GW] Number of threads for 
 
 The detailed description of these parameters is [here](http://www.yambo-code.org/wiki/index.php?title=GW_parallel_strategies)   
 
+```
 g      parallelism over G-vectors   
 q      parallelism over transferred momenta   
 c/v    parallelism over conduction/valence bands   
 k      parallelism over k-points   
+qp      parallelism over qp corrections to be computed  (nk)
+b       parallelism over (occupied) density matrix (or Green's function) bands  (m)
+```
 
 Here are few examples of running Yambo on 10 nodes with 48 cores:
 
