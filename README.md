@@ -213,14 +213,19 @@ Yambo code has several levels of paralelization. The parameters for paralelizati
 
 ```
 NLogCPUs = 10                               # [PARALLEL] Live-timing CPU`s (0 for all)
-X_nCPU_LinAlg_INV=1                         # [PARALLEL] CPUs for Linear Algebra
-DIP_CPU= "2 24 10"                          # [PARALLEL] CPUs for each role
-DIP_ROLEs= "g k c v"                        # [PARALLEL] CPUs roles (k,c,v)
-SE_CPU= "1 1 10 48"                         # [PARALLEL] CPUs for each role
-SE_ROLEs= "q qp b"                          # [PARALLEL] CPUs roles (q,qp,b)
-X_Threads= 1                                # [OPENMP/X] Number of threads for response functions
-DIP_Threads= 1                              # [OPENMP/X] Number of threads for dipoles
-SE_Threads= 1                               # [OPENMP/GW] Number of threads for self-energy
+X_nCPU_LinAlg_INV=1                         # [PARALLEL] CPUs for Linear Algebra (for ScaLapack)
+
+DIP_CPU= "2 10 24"                          # [PARALLEL Dipoles] CPUs for each role
+DIP_ROLEs= "k c v"                          # [PARALLEL Dipoles] CPUs roles (k,c,v)
+DIP_Threads= 0                              # [OPENMP   Dipoles] Number of threads for dipoles
+
+SE_CPU= "1 24 20"                           # [PARALLEL Self-Energy] CPUs for each role
+SE_ROLEs= "q qp b"                          # [PARALLEL Self-Energy] CPUs roles (q,qp,b)
+SE_Threads= 0                               # [OPENMP   Self-Energy] Number of threads for self-energy
+
+X_CPU= "1 1 5 48 2"                         # [PARALLEL Polarisability] CPUs for each role
+X_ROLEs= "q k c v g"                        # [PARALLEL Polarisability] CPUs roles (q,g,k,c,v)
+X_Threads= 0                                # [OPENMP   Polarisability] Number of threads for response functions
 ```
 
 The detailed description of these parameters is [here](http://www.yambo-code.org/wiki/index.php?title=GW_parallel_strategies)   
@@ -233,6 +238,8 @@ q      parallelism over transferred momenta
 qp     parallelism over qp corrections to be computed  (nk)
 b      parallelism over (occupied) density matrix (or Green's function) bands  (m)
 ```
+
+By default SE_Threads, DIP_Threads, and X_Threads are set to zero and controlled by the OMP_NUM_THREADS environment variable.   
 
 Here are few examples of running Yambo on 10 nodes with 48 cores:
 
