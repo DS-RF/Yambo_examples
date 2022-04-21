@@ -232,6 +232,8 @@ SE_ROLEs= "q qp b"            # [PARALLEL Self-Energy] CPUs roles (q,qp,b)
 SE_Threads= 0                 # [OPENMP   Self-Energy] Number of threads for self-energy
 
 ```
+The detailed description of these parameters is [here](http://www.yambo-code.org/wiki/index.php?title=GW_parallel_strategies) By default *SE_Threads*, *DIP_Threads*, and *X_Threads* are set to zero and controlled by the OMP_NUM_THREADS environment variable.
+
 Default parameters for 10x48 as an example:
 ```
 DIP
@@ -246,7 +248,7 @@ X
     1    1     5     6   16       memory
 ```
 
-The detailed description of these parameters is [here](http://www.yambo-code.org/wiki/index.php?title=GW_parallel_strategies)   
+   
 
 ```
 g      parallelism over G-vectors   
@@ -257,7 +259,7 @@ qp     parallelism over qp corrections to be computed  (nk)
 b      parallelism over (occupied) density matrix (or Green's function) bands  (m)
 ```
 
-By default SE_Threads, DIP_Threads, and X_Threads are set to zero and controlled by the OMP_NUM_THREADS environment variable.   
+   
 
 Here are few examples of running Yambo on 10 nodes with 48 cores:
 
