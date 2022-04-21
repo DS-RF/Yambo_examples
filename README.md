@@ -209,24 +209,25 @@ For larger number of nodes, probably, the optimized parameters for parallelizati
 
 ### Yambo GW on 10 nodes
 
-Yambo code has several levels of paralelization. The parameters for paralelization can be placed in input file [yambo.in](https://github.com/Dmitry-Skachkov/Yambo_examples/blob/main/Example_4/yambo1.in):
+Yambo code has several levels of paralelization. The parameters for paralelization can be placed in input file [yambo.in](https://github.com/Dmitry-Skachkov/Yambo_examples/blob/main/Example_4/yambo1.in). In order to see the parameters for paralelization you should use the 
 
 ```
-NLogCPUs = 10                               # [PARALLEL] Live-timing CPU`s (0 for all)
-X_nCPU_LinAlg_INV=1                         # [PARALLEL] CPUs for Linear Algebra (for ScaLapack)
-PAR_def_mode= "memory"                      # [PARALLEL] Default distribution mode ("balanced"/"memory"/"workload")
+NLogCPUs = 10                 # [PARALLEL] Live-timing CPU`s (0 for all)
+X_nCPU_LinAlg_INV=1           # [PARALLEL] CPUs for Linear Algebra (for ScaLapack)
+PAR_def_mode= "memory"        # [PARALLEL] Default distribution mode ("balanced"/"memory"/"workload")
 
-DIP_CPU= "2 10 24"                          # [PARALLEL Dipoles] CPUs for each role
-DIP_ROLEs= "k c v"                          # [PARALLEL Dipoles] CPUs roles (k,c,v)
-DIP_Threads= 0                              # [OPENMP   Dipoles] Number of threads for dipoles
+DIP_CPU= "2 10 24"            # [PARALLEL Dipoles] CPUs for each role
+DIP_ROLEs= "k c v"            # [PARALLEL Dipoles] CPUs roles (k,c,v)
+DIP_Threads= 0                # [OPENMP   Dipoles] Number of threads for dipoles
 
-SE_CPU= "1 24 20"                           # [PARALLEL Self-Energy] CPUs for each role
-SE_ROLEs= "q qp b"                          # [PARALLEL Self-Energy] CPUs roles (q,qp,b)
-SE_Threads= 0                               # [OPENMP   Self-Energy] Number of threads for self-energy
+X_and_IO_CPU= "1 1 5 48 2"    # [PARALLEL Polarisability] CPUs for each role
+X_and_IO_ROLEs= "q k c v g"   # [PARALLEL Polarisability] CPUs roles (q,g,k,c,v)
+X_and_IO_Threads= 0           # [OPENMP   Polarisability] Number of threads for response functions
 
-X_CPU= "1 1 5 48 2"                         # [PARALLEL Polarisability] CPUs for each role
-X_ROLEs= "q k c v g"                        # [PARALLEL Polarisability] CPUs roles (q,g,k,c,v)
-X_Threads= 0                                # [OPENMP   Polarisability] Number of threads for response functions
+SE_CPU= "1 24 20"             # [PARALLEL Self-Energy] CPUs for each role
+SE_ROLEs= "q qp b"            # [PARALLEL Self-Energy] CPUs roles (q,qp,b)
+SE_Threads= 0                 # [OPENMP   Self-Energy] Number of threads for self-energy
+
 ```
 
 The detailed description of these parameters is [here](http://www.yambo-code.org/wiki/index.php?title=GW_parallel_strategies)   
