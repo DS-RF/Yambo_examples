@@ -222,8 +222,8 @@ DIP_CPU= "2 10 24"            # [PARALLEL Dipoles] CPUs for each role
 DIP_ROLEs= "k c v"            # [PARALLEL Dipoles] CPUs roles (k,c,v)
 DIP_Threads= 0                # [OPENMP   Dipoles] Number of threads for dipoles
 
-X_and_IO_CPU= "1 1 5 48 2"    # [PARALLEL Polarisability] CPUs for each role
-X_and_IO_ROLEs= "q k c v g"   # [PARALLEL Polarisability] CPUs roles (q,g,k,c,v)
+X_and_IO_CPU= "1 2 1 5 48"    # [PARALLEL Polarisability] CPUs for each role
+X_and_IO_ROLEs= "q g k c v"   # [PARALLEL Polarisability] CPUs roles (q,g,k,c,v)
 X_and_IO_nCPU_LinAlg_INV=-1   # [PARALLEL Polarisability] CPUs for Linear Algebra (for ScaLapack)
 X_and_IO_Threads= 0           # [OPENMP   Polarisability] Number of threads for response functions
 
@@ -231,6 +231,19 @@ SE_CPU= "1 24 20"             # [PARALLEL Self-Energy] CPUs for each role
 SE_ROLEs= "q qp b"            # [PARALLEL Self-Energy] CPUs roles (q,qp,b)
 SE_Threads= 0                 # [OPENMP   Self-Energy] Number of threads for self-energy
 
+```
+Default parameters for 10x48 as an example:
+```
+DIP
+   k     c     v                   Mode
+   1     1    480                workload
+   5     6     16                memory
+
+X 
+   q     g     k     c    v        Mode
+   12    1    40     1    1       workload
+    2    1    10     6    4       balanced
+    1    1     5     6   16       memory
 ```
 
 The detailed description of these parameters is [here](http://www.yambo-code.org/wiki/index.php?title=GW_parallel_strategies)   
