@@ -234,6 +234,15 @@ SE_Threads= 0                 # [OPENMP   Self-Energy] Number of threads for sel
 ```
 The detailed description of these parameters is [here](http://www.yambo-code.org/wiki/index.php?title=GW_parallel_strategies) By default *SE_Threads*, *DIP_Threads*, and *X_Threads* are set to zero and controlled by the OMP_NUM_THREADS environment variable.
 
+```
+g      parallelism over G-vectors   
+k      parallelism over k-points   
+c/v    parallelism over conduction/valence bands   
+q      parallelism over transferred momenta   
+qp     parallelism over qp corrections to be computed  (nk)
+b      parallelism over (occupied) density matrix (or Green's function) bands  (m)
+```
+
 Default parameters for 10x48 as an example:
 ```
 DIP
@@ -247,19 +256,6 @@ X
     2    1    10     6    4       balanced
     1    1     5     6   16       memory
 ```
-
-   
-
-```
-g      parallelism over G-vectors   
-k      parallelism over k-points   
-c/v    parallelism over conduction/valence bands   
-q      parallelism over transferred momenta   
-qp     parallelism over qp corrections to be computed  (nk)
-b      parallelism over (occupied) density matrix (or Green's function) bands  (m)
-```
-
-   
 
 Here are few examples of running Yambo on 10 nodes with 48 cores:
 
