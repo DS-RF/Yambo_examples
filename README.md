@@ -5,7 +5,7 @@
 * [Example 2. GW band structure](https://github.com/Dmitry-Skachkov/Yambo_examples/blob/main/README.md#example-2)  
 * [Example 3. Optical properties](https://github.com/Dmitry-Skachkov/Yambo_examples/blob/main/README.md#example-3)  
 * [Example 4. Parallel calculation](https://github.com/Dmitry-Skachkov/Yambo_examples/blob/main/README.md#example-4)
-
+* [Example 5. Second harmonic generation](https://github.com/Dmitry-Skachkov/Yambo_examples/blob/main/README.md#example-5)
 
 # Yambo installation on Stokes Supercluster of UCF
 
