@@ -321,13 +321,13 @@ Then it is necessary to reduce symmetries. For thet, we generate input file for 
 
 and in the input file we add *y* component of electric field (Efield1) and uncomment RmTimeRev:
 ```
-fixsyms                      # [R] Reduce Symmetries
+fixsyms                            # [R] Reduce Symmetries
 % Efield1
- 0.00     | 1.00     | 0.00     |        # First external Electric Field
+ 0.00     | 1.00     | 0.00     |  # First external Electric Field
 %
 % Efield2
- 0.00     | 0.00     | 0.00     |        # Additional external Electric Field
+ 0.00     | 0.00     | 0.00     |  # Additional external Electric Field
 %
-#RmAllSymm                   # Remove all symmetries
-RmTimeRev                   # Remove Time Reversal
+#RmAllSymm                         # Remove all symmetries
+RmTimeRev                          # Remove Time Reversal
 ```
