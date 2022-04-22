@@ -278,7 +278,7 @@ Please note, that in order to use hybrid OpenMP/MPI calculation you need to have
 
 ## Second harmonic generation in MoS2
 
-You need to do QE calculation and convert the data files to Yambo format (Example 1). Then in d.save directory create input file for non-linear calculation:
+You need to do QE calculation and convert the data files to Yambo format ([Example 1](https://github.com/Dmitry-Skachkov/Yambo_examples/blob/main/README.md#example-1)). Then in d.save directory create input file for non-linear calculation:
 
 > yambo_nl -i -V RL -F setup_nl.in
 
