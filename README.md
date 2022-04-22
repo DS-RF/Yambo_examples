@@ -315,7 +315,7 @@ You will get the responce:
  <---> [05] Memory Overview
  <---> [06] Game Over & Game summary
 ```
-Then it is necessary to reduce symmetries. For thet, we generate input file for *ypp*:
+Then it is necessary to reduce symmetries. For that, we generate input file for *ypp*:
 
 > ypp -y     
 
