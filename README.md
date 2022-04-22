@@ -282,7 +282,7 @@ You need to do QE calculation and convert the data files to Yambo format (Exampl
 
 > yambo_nl -i -V RL -F setup_nl.in
 
-and change number of G-vectors by 2(3):
+and reduce number of G-vectors twice:
 
 ```
 MaxGvecs=  20000           RL    # [INI] Max number of G-vectors planned to use
