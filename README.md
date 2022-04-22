@@ -343,4 +343,9 @@ and run setup again:
 
 >  yambo_nl -F ../setup_nl.in   
 
+Now everything is ready for calculation of non-linear parameters. For that we generate input file:   
+
+> yambo_nl -u   
+
+
 
