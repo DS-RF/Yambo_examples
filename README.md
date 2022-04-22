@@ -345,7 +345,13 @@ and run setup again:
 
 Now everything is ready for calculation of non-linear parameters. For that we generate input file:   
 
-> yambo_nl -u   
+> yambo_nl -u -F yambo_nl.in     
 
+and change the band range for non-linear calculation:
 
-
+```
+% NLBands
+  25 | 28 |                   # [NL] Bands
+%
+```
+where 25 and 26 are two valence bands and 27, 28 are two bands from conduction band.    
