@@ -276,9 +276,17 @@ Please note, that in order to use hybrid OpenMP/MPI calculation you need to have
 
 # Example 5  
 
-## Second harmonic generation in MoS2
+## Linear responce 
 
-At first, you need to do QE calculation and convert the data files to Yambo format ([Example 1](https://github.com/Dmitry-Skachkov/Yambo_examples/blob/main/README.md#example-1)). Then in d.save directory create setup input file for non-linear calculation:
+At first, you need to do QE calculation and convert the data files to Yambo format ([Example 1](https://github.com/Dmitry-Skachkov/Yambo_examples/blob/main/README.md#example-1)). SAVE directory will contain the following files:
+```
+ns.db1
+ns.kb_pp_pwscf_*
+ns.wf
+ns.ws_fragments_*
+```
+
+In order to setup calculation for linear responce:
 
 > yambo_nl -i -V RL -F setup_nl.in
 
@@ -287,6 +295,7 @@ and reduce number of G-vectors twice:
 ```
 MaxGvecs=  20000           RL    # [INI] Max number of G-vectors planned to use
 ```
+
 Then run initialization of non-liner calculation:
 
 > yambo_nl -F setup_nl.in   
@@ -330,35 +339,36 @@ fixsyms                            # [R] Reduce Symmetries
 %
 #RmAllSymm                         # Remove all symmetries
 RmTimeRev                          # Remove Time Reversal
+RmSpaceInv                    # Remove Spatial Inversion
 ```
 After that run ypp:  
 
 > ypp   
 
-and go to *FixSymm* directory
+go to *FixSymm* directory
 
 > cd FixSymm   
 
-and run setup again:
+run setup again:
 
 >  yambo_nl -F ../setup_nl.in   
 
-Now everything is ready for calculation of non-linear parameters. For that we generate input file:   
+Now everything is ready for calculation of linear response. For that we generate input file:   
 
-> yambo_nl -u -F yambo_nl.in -V par    
+> yambo_nl -u -F input_lr.in -V par    
 
 and change the band range for non-linear calculation:
 
 ```
 % NLBands
-  25 | 28 |                   # [NL] Bands
+  3 | 6 |                   # [NL] Bands
 %
 ```
-where 25 and 26 are two valence bands and 27, 28 are two bands from conduction band.  
+where 3 and 4 are two valence bands and 5, 6 are two bands from conduction band.  
  
-Run real time non-linear calculation:   
+Run real time linear response calculation:   
 
-> yambo_nl -F yambo_nl.in   
+> yambo_nl -F input_lr.in   
 
 
 
