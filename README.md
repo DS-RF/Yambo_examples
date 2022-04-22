@@ -345,7 +345,7 @@ and run setup again:
 
 Now everything is ready for calculation of non-linear parameters. For that we generate input file:   
 
-> yambo_nl -u -F yambo_nl.in     
+> yambo_nl -u -F yambo_nl.in -V par    
 
 and change the band range for non-linear calculation:
 
