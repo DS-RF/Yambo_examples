@@ -331,3 +331,7 @@ fixsyms                            # [R] Reduce Symmetries
 #RmAllSymm                         # Remove all symmetries
 RmTimeRev                          # Remove Time Reversal
 ```
+After that run ypp:  
+
+> ypp   
+
