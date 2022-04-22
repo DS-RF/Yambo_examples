@@ -316,7 +316,9 @@ You will get the responce:
  <---> [06] Game Over & Game summary
 ```
 Then it is necessary to reduce symmetries. For thet, we generate input file for *ypp*:
+
 > ypp -y     
+
 and in the input file we add y component of electric field and uncomment RmTimeRev:
 ```
 fixsyms                      # [R] Reduce Symmetries
