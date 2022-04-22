@@ -335,3 +335,12 @@ After that run ypp:
 
 > ypp   
 
+and go to *FixSymm* directory
+
+> cd FixSymm   
+
+and run setup again:
+
+>  yambo_nl -F ../setup_nl.in   
+
+
