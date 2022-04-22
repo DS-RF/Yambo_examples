@@ -287,3 +287,7 @@ and reduce number of G-vectors twice:
 ```
 MaxGvecs=  20000           RL    # [INI] Max number of G-vectors planned to use
 ```
+Then run initialization of non-liner calculation:
+
+> yambo_nl -F setup_nl.in   
+
