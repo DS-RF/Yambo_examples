@@ -354,4 +354,11 @@ and change the band range for non-linear calculation:
   25 | 28 |                   # [NL] Bands
 %
 ```
-where 25 and 26 are two valence bands and 27, 28 are two bands from conduction band.    
+where 25 and 26 are two valence bands and 27, 28 are two bands from conduction band.  
+ 
+Run real time non-linear calculation:   
+
+> yambo_nl -F yambo_nl.in   
+
+
+
