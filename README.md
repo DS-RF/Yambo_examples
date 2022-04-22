@@ -315,3 +315,15 @@ You will get the responce:
  <---> [05] Memory Overview
  <---> [06] Game Over & Game summary
 ```
+Then it is necessary to reduce symmetries. Generate input file for *ypp* and add y component of electric field and uncomment RmTimeRev:
+```
+fixsyms                      # [R] Reduce Symmetries
+% Efield1
+ 0.00     | 1.00     | 0.00     |        # First external Electric Field
+%
+% Efield2
+ 0.00     | 0.00     | 0.00     |        # Additional external Electric Field
+%
+#RmAllSymm                   # Remove all symmetries
+RmTimeRev                   # Remove Time Reversal
+```
