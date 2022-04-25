@@ -12,7 +12,7 @@
 Copy the latest release of Yambo code and unpack:  
 
 > wget https://github.com/yambo-code/yambo/archive/refs/tags/5.0.4.zip  
-> tar -xvf 5.0.4.zip
+> unzip 5.0.4.zip
 
 Go to Yambo directory:
 
