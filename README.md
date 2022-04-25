@@ -58,9 +58,9 @@ ypp_sc
 ```
 *p2y/a2y/c2y* - programs for data conversion from QE/ABINIT/... format   
 *yambo* - main module   
-*yambo_nl* - non-linear calculations    
+*yambo_nl* - non-linear calculations (Berry phase approach)    
 *yambo_ph* - phonon calculation   
-*yambo_rt* - 
+*yambo_rt* - real-time dynamics   
 
 Copy the executables into default directory:
 
