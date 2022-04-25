@@ -61,6 +61,7 @@ ypp_sc
 *yambo_nl* - non-linear calculations (Berry phase approach)    
 *yambo_ph* - phonon calculation   
 *yambo_rt* - real-time dynamics   
+*yambo_sc* -    
 
 Copy the executables into default directory:
 
