@@ -62,6 +62,7 @@ ypp_sc
 *yambo_ph* - phonon calculation   
 *yambo_rt* - real-time dynamics   
 *yambo_sc* -    
+*ypp* - post-processing tools
 
 Copy the executables into default directory:
 
