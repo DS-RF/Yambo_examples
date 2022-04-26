@@ -33,11 +33,12 @@ Currently Loaded Modules:
 
 Configure the system and compile the code:
 
-> ./configure --enable-memory-profile --enable-dp   
+> ./configure --enable-memory-profile --enable-dp --enable-open-mp    
 > make all  
 
-*--enable-memory-profile* is necessary in order to have information in Yambo output about used memory   
-*--enable-dp* asks to compile the code with double precision necessary for optical calculations    
+*--enable-memory-profile* is necessary in order to have information in Yambo output about used memory,   
+*--enable-dp* asks to compile the code with double precision necessary for optical calculations,    
+*--enable-open-mp* tag asks to compile hybrid OpenMP/MPI version of the code.
 
 
 After the compilation (~4hrs) the yambo/bin directory will contain the following executables:
