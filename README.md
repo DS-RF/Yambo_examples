@@ -74,7 +74,7 @@ Check yambo version:
 > yambo -version
 
 ```
-This is yambo - MPI+HDF5_IO - Ver. 5.0.4 Revision 19595 Hash 896bffc02
+This is yambo - MPI+OpenMP+HDF5_IO - Ver. 5.0.4 Revision 19595 Hash 896bffc02
 ```
 
 # Example 1
