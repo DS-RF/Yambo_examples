@@ -40,7 +40,7 @@ Configure the system and compile the code:
 *--enable-dp* asks to compile the code with double precision necessary for optical calculations,    
 *--enable-open-mp* tag asks to compile hybrid OpenMP/MPI version of the code.   
 
-In order to see all available options type:
+In order to see all available options for configuration type:
 
 > ./configure --help
 
