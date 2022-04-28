@@ -381,4 +381,4 @@ Run real time linear response calculation:
 
 
 
-[Go to top](https://github.com/Dmitry-Skachkov/Yambo_examples#yambo-usage)
+[Go to top](#yambo-usage)
