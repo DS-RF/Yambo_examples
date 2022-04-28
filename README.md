@@ -1,11 +1,11 @@
 # YAMBO usage
 
-* [Yambo installation](https://github.com/Dmitry-Skachkov/Yambo_examples#yambo-installation-on-stokes-supercluster-of-ucf)  
-* [Example 1. Ground state calculation](https://github.com/Dmitry-Skachkov/Yambo_examples/blob/main/README.md#example-1)  
-* [Example 2. GW band structure](https://github.com/Dmitry-Skachkov/Yambo_examples/blob/main/README.md#example-2)  
-* [Example 3. Optical properties](https://github.com/Dmitry-Skachkov/Yambo_examples/blob/main/README.md#example-3)  
-* [Example 4. Parallel calculation](https://github.com/Dmitry-Skachkov/Yambo_examples/blob/main/README.md#example-4)
-* [Example 5. Second harmonic generation](https://github.com/Dmitry-Skachkov/Yambo_examples/blob/main/README.md#example-5)
+* [Yambo installation](#yambo-installation-on-stokes-supercluster-of-ucf)  
+* [Example 1. Ground state calculation](#example-1)  
+* [Example 2. GW band structure](#example-2)  
+* [Example 3. Optical properties](#example-3)  
+* [Example 4. Parallel calculation](#example-4)
+* [Example 5. Second harmonic generation](#example-5)
 
 # Yambo installation on Stokes Supercluster of UCF
 
