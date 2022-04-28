@@ -291,7 +291,7 @@ Please note, that in order to use hybrid OpenMP/MPI calculation you need to have
 
 ## Linear responce 
 
-At first, you need to do QE calculation and convert the data files to Yambo format ([Example 1](https://github.com/Dmitry-Skachkov/Yambo_examples/blob/main/README.md#example-1)). SAVE directory will contain the following files:
+At first, you need to do QE calculation and convert the data files to Yambo format ([Example 1](#example-1)). SAVE directory will contain the following files:
 ```
 ns.db1
 ns.kb_pp_pwscf_*
