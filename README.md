@@ -377,10 +377,10 @@ and change the band range for non-linear calculation:
 ```
 where 3 and 4 are two valence bands and 5, 6 are two bands from conduction band.  
  
-Run real time dynamics to calculate linear response:   
+Run real time dynamics to calculate linear response (calc. time 2m30s):   
 
 > yambo_nl -F input_lr.in   
 
-
+File o.polarization_F1 will contain the polarization. 
 
 [Go to top](#yambo-usage)
