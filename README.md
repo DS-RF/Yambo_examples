@@ -291,6 +291,8 @@ Please note, that in order to use hybrid OpenMP/MPI calculation you need to have
 
 ## Linear responce 
 
+Example from [Lumen web-site](http://www.attaccalite.com/lumen/linear_response.html)  
+
 At first, you need to do QE calculation ([scf](https://github.com/Dmitry-Skachkov/Yambo_examples/blob/main/Example_5/) and [nscf](https://github.com/Dmitry-Skachkov/Yambo_examples/blob/main/Example_5/)) and convert the data files to Yambo format ([Example 1](#example-1)). SAVE directory will contain the following files:
 ```
 ns.db1
@@ -375,7 +377,7 @@ and change the band range for non-linear calculation:
 ```
 where 3 and 4 are two valence bands and 5, 6 are two bands from conduction band.  
  
-Run real time linear response calculation:   
+Run real time dynamics to calculate linear response:   
 
 > yambo_nl -F input_lr.in   
 
