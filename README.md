@@ -305,7 +305,7 @@ In order to setup calculation for linear responce:
 
 > yambo_nl -i -V RL -F setup.in
 
-and reduce number of G-vectors twice:
+Reduce number of G-vectors:
 
 ```
 MaxGvecs=  1000           RL    # [INI] Max number of G-vectors planned to use
