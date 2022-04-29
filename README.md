@@ -291,7 +291,7 @@ Please note, that in order to use hybrid OpenMP/MPI calculation you need to have
 
 ## Linear responce 
 
-At first, you need to do QE calculation and convert the data files to Yambo format ([Example 1](#example-1)). SAVE directory will contain the following files:
+At first, you need to do QE calculation ([scf](https://github.com/Dmitry-Skachkov/Yambo_examples/blob/main/Example_5/) and [nscf](https://github.com/Dmitry-Skachkov/Yambo_examples/blob/main/Example_5/)) and convert the data files to Yambo format ([Example 1](#example-1)). SAVE directory will contain the following files:
 ```
 ns.db1
 ns.kb_pp_pwscf_*
@@ -301,17 +301,17 @@ ns.ws_fragments_*
 
 In order to setup calculation for linear responce:
 
-> yambo_nl -i -V RL -F setup_nl.in
+> yambo_nl -i -V RL -F setup.in
 
 and reduce number of G-vectors twice:
 
 ```
-MaxGvecs=  20000           RL    # [INI] Max number of G-vectors planned to use
+MaxGvecs=  1000           RL    # [INI] Max number of G-vectors planned to use
 ```
 
 Then run initialization of non-liner calculation:
 
-> yambo_nl -F setup_nl.in   
+> yambo_nl -F setup.in   
 
 You will get the responce:
 ```
@@ -352,7 +352,7 @@ fixsyms                            # [R] Reduce Symmetries
 %
 #RmAllSymm                         # Remove all symmetries
 RmTimeRev                          # Remove Time Reversal
-RmSpaceInv                    # Remove Spatial Inversion
+#RmSpaceInv                        # Remove Spatial Inversion
 ```
 After that run ypp:  
 
