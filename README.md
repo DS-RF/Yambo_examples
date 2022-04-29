@@ -6,6 +6,7 @@
 * [Example 3. Optical properties](#example-3)  
 * [Example 4. Parallel calculation](#example-4)
 * [Example 5. Linear response](#example-5)
+* [Example 6. Second harmonic generation](#example-6)
 
 # Yambo installation on Stokes Supercluster of UCF
 
@@ -382,5 +383,14 @@ Run real time dynamics to calculate linear response (calc. time 2m30s):
 > yambo_nl -F input_lr.in   
 
 File [o.polarization_F1](https://github.com/Dmitry-Skachkov/Yambo_examples/blob/main/Example_5/o.polarization_F1) will contain the polarization. 
+
+
+# Example 6  
+
+## Second harmonic generation 
+
+Example from [Lumen web-site](http://www.attaccalite.com/lumen/linear_response.html)    
+
+
 
 [Go to top](#yambo-usage)
