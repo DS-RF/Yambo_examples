@@ -5,7 +5,7 @@
 * [Example 2. GW band structure](#example-2)  
 * [Example 3. Optical properties](#example-3)  
 * [Example 4. Parallel calculation](#example-4)
-* [Example 5. Second harmonic generation](#example-5)
+* [Example 5. Linear response](#example-5)
 
 # Yambo installation on Stokes Supercluster of UCF
 
