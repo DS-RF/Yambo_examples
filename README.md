@@ -381,6 +381,6 @@ Run real time dynamics to calculate linear response (calc. time 2m30s):
 
 > yambo_nl -F input_lr.in   
 
-File o.polarization_F1 will contain the polarization. 
+File [o.polarization_F1](https://github.com/Dmitry-Skachkov/Yambo_examples/blob/main/Example_5/o.polarization_F1) will contain the polarization. 
 
 [Go to top](#yambo-usage)
