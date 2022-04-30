@@ -14,8 +14,6 @@
 #                http://www.yambo-code.org                            
 #
 nloptics                         # [R] Non-linear spectroscopy
-DIP_Threads=0                    # [OPENMP/X] Number of threads for dipoles
-NL_Threads=0                     # [OPENMP/NL] Number of threads for nl-optics
 % NLBands
   3 | 6 |                        # [NL] Bands range
 %
@@ -38,12 +36,15 @@ EXXRLvcs=  965             RL    # [XX] Exchange    RL components
 ExtF_kind= "SOFTSIN"             # [NL ExtF] Kind(SIN|SOFTSIN|RES|ANTIRES|GAUSS|DELTA|QSSIN)
 
 NLogCPUs=10                      # [PARALLEL] Live-timing CPU`s (0 for all)
-PAR_def_mode= "balanced"         # [PARALLEL] Default distribution mode ("balanced"/"memory"/"workload")
-NL_CPU= "2 24"                   # [PARALLEL] CPUs for each role
-NL_ROLEs= "w k"                  # [PARALLEL] CPUs roles (w,k)
+PAR_def_mode= "balanced"         # [PARALLEL] Default distribution mode ("balanced"/"memory"/"workload") 
+
 DIP_CPU= "4 6 2"                 # [PARALLEL] CPUs for each role
 DIP_ROLEs= "k c v"               # [PARALLEL] CPUs roles (k,c,v)
 DIP_Threads=0                    # [OPENMP/X] Number of threads for dipoles
+
+NL_CPU= "2 24"                   # [PARALLEL] CPUs for each role
+NL_ROLEs= "w k"                  # [PARALLEL] CPUs roles (w,k)
 NL_Threads=0                     # [OPENMP/NL] Number of threads for nl-optics  
+
 
 
