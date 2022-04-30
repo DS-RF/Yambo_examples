@@ -369,7 +369,7 @@ Now everything is ready for calculation of linear response. For that we generate
 
 > yambo_nl -u -F input_lr.in -V par    
 
-and change the band range for non-linear calculation:
+and change the band range, simulation time, energy steps, dampling, electric field, and type of electric field:
 
 ```
 % NLBands
