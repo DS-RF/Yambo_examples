@@ -408,7 +408,7 @@ NLDamping= 0.150000    eV    # [NL] Damping
 % ExtF_Dir
  0.000000 | 1.000000 | 0.000000 |        # [NL ExtF] Versor
 ```
-The modified input file [yambo_shg.in]
+The modified input file [yambo_shg.in](https://github.com/Dmitry-Skachkov/Yambo_examples/blob/main/Example_6/yambo_shg.in)
 
 Submit job on 48 cores for real-time dynamics (calc. time 7m40s):   
 
