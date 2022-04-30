@@ -395,7 +395,7 @@ Do [Example 6](#example-6) first, and then generate input file for secong harmon
 
 > yambo_nl -u -F input_shg.in -V par    
 
-Submit job for real-time dynamics on 48 cores (calc. time 7m40s):   
+Submit job on 48 cores for real-time dynamics (calc. time 7m40s):   
 
 > sbatch job_yambo_nl   
 
