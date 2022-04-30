@@ -393,7 +393,7 @@ Example from [Lumen web-site](http://www.attaccalite.com/lumen/shg_in_AlAs.html)
 
 Do [Example 5](#example-5) first, and then generate input file for secong harmonic calculation:
 
-> yambo_nl -u -F input_shg.in -V par    
+> yambo_nl -u -V par -F input_shg.in     
 
 Submit job on 48 cores for real-time dynamics (calc. time 7m40s):   
 
