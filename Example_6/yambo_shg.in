@@ -1,0 +1,47 @@
+#                                                                     
+#   __   __     _        __  __       ____      U  ___  u             
+#   \ \ / / U  /"\  U u |" \/ "| u U | __") u    \/"_ \/              
+#    \ V /   \/ _ \/   \| |\/| |/   \|  _ \/     | | | |              
+#   U_|"|_u  / ___ \    | |  | |     | |_) | .-,_| |_| |              
+#     |_|   /_/   \_\   |_|  |_|     |____/   \_)-\___/               
+# .-,//|(_   \\    >>  <<,-,,-.     _|| \\_        \\                 
+#  \_) (__) (__)  (__)  (./  \.)   (__) (__)      (__)                
+#                                                                     
+#                                                                     
+#       Version 5.0.4 Revision 19595 Hash 896bffc02                   
+#                        Branch is                                    
+#                MPI+OpenMP+HDF5_IO Build                             
+#                http://www.yambo-code.org                            
+#
+nloptics                         # [R] Non-linear spectroscopy
+DIP_Threads=0                    # [OPENMP/X] Number of threads for dipoles
+NL_Threads=0                     # [OPENMP/NL] Number of threads for nl-optics
+% NLBands
+  3 | 6 |                           # [NL] Bands range
+%
+NLverbosity= "high"               # [NL] Verbosity level (low | high)
+NLtime=-1.000000           fs    # [NL] Simulation Time
+NLintegrator= "INVINT"           # [NL] Integrator ("EULEREXP/RK2/RK4/RK2EXP/HEUN/INVINT/CRANKNIC")
+NLCorrelation= "IPA"             # [NL] Correlation ("IPA/HARTREE/TDDFT/LRC/LRW/JGM/SEX")
+NLLrcAlpha= 0.000000             # [NL] Long Range Correction
+% NLEnRange
+ 1.00000 | 1.000000 |         eV    # [NL] Energy range
+%
+NLEnSteps=  10                   # [NL] Energy steps
+NLDamping= 0.1500000        eV    # [NL] Damping (or dephasing)
+#EvalCurrent                   # [NL] Evaluate the current
+HARRLvcs=  965             RL    # [HA] Hartree     RL components
+EXXRLvcs=  965             RL    # [XX] Exchange    RL components
+% ExtF_Dir
+ 1.000000 | 1.000000 | 0.000000 |        # [NL ExtF] Field Versor
+%
+ExtF_kind= "SOFTSIN"             # [NL ExtF] Kind(SIN|SOFTSIN|RES|ANTIRES|GAUSS|DELTA|QSSIN)
+
+NLogCPUs=10                       # [PARALLEL] Live-timing CPU`s (0 for all)
+PAR_def_mode= "balanced"         # [PARALLEL] Default distribution mode ("balanced"/"memory"/"workload")
+NL_CPU= "2 24"                       # [PARALLEL] CPUs for each role
+NL_ROLEs= "w k"                     # [PARALLEL] CPUs roles (w,k)
+DIP_CPU= "4 6 2"                      # [PARALLEL] CPUs for each role
+DIP_ROLEs= "k c v"                    # [PARALLEL] CPUs roles (k,c,v)
+DIP_Threads=0                    # [OPENMP/X] Number of threads for dipoles
+NL_Threads=0                     # [OPENMP/NL] Number of threads for nl-optics
