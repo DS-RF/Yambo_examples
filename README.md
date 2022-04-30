@@ -397,7 +397,7 @@ Do [Example 5](#example-5) first, and then generate input file for secong harmon
 
 Submit job on 48 cores for real-time dynamics (calc. time 7m40s):   
 
-> sbatch job_yambo_nl   
+> sbatch [job_yambo_nl](https://github.com/Dmitry-Skachkov/Yambo_examples/blob/main/Example_6/job_yambo_nl)   
 
 
 [Go to top](#yambo-usage)
