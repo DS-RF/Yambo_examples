@@ -383,7 +383,7 @@ NLDamping= 0.000000    eV    # [NL] Damping
 %
 ExtF_kind= "DELTA"               # [NL ExtF] Kind(SIN|SOFTSIN|RES|ANTIRES|GAUSS|DELTA|QSSIN)
 ```
-where 3 and 4 are two valence bands and 5, 6 are two bands from conduction band.  http://www.attaccalite.com/lumen/shg_in_AlAs.html
+where 3 and 4 are two valence bands and 5, 6 are two bands from conduction band. 
  
 Run real time dynamics to calculate linear response (calc. time 2m30s):   
 
