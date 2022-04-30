@@ -25,7 +25,7 @@ NLintegrator= "INVINT"           # [NL] Integrator ("EULEREXP/RK2/RK4/RK2EXP/HEU
 NLCorrelation= "IPA"             # [NL] Correlation ("IPA/HARTREE/TDDFT/LRC/LRW/JGM/SEX")
 NLLrcAlpha= 0.000000             # [NL] Long Range Correction
 % NLEnRange
- 1.00000 | 1.000000 |         eV    # [NL] Energy range
+ 1.00000 | 6.000000 |         eV    # [NL] Energy range
 %
 NLEnSteps=  10                   # [NL] Energy steps
 NLDamping= 0.1500000        eV    # [NL] Damping (or dephasing)
@@ -33,7 +33,7 @@ NLDamping= 0.1500000        eV    # [NL] Damping (or dephasing)
 HARRLvcs=  965             RL    # [HA] Hartree     RL components
 EXXRLvcs=  965             RL    # [XX] Exchange    RL components
 % ExtF_Dir
- 1.000000 | 1.000000 | 0.000000 |        # [NL ExtF] Field Versor
+ 0.000000 | 1.000000 | 0.000000 |        # [NL ExtF] Field Versor
 %
 ExtF_kind= "SOFTSIN"             # [NL ExtF] Kind(SIN|SOFTSIN|RES|ANTIRES|GAUSS|DELTA|QSSIN)
 
