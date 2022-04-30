@@ -391,56 +391,13 @@ File [o.polarization_F1](https://github.com/Dmitry-Skachkov/Yambo_examples/blob/
 
 Example from [Lumen web-site](http://www.attaccalite.com/lumen/shg_in_AlAs.html)    
 
-Do QE calculation ([scf](https://github.com/Dmitry-Skachkov/Yambo_examples/blob/main/Example_5/) and [nscf](https://github.com/Dmitry-Skachkov/Yambo_examples/blob/main/Example_5/)) and convert the data files to Yambo format (see [Example 1](#example-1)). 
+Do [Example 6](#example-6) first, and then generate input file for secong harmonic calculation:
 
-To setup calculation for linear responce:
+> yambo_nl -u -F input_shg.in -V par    
 
-> yambo_nl -i -V RL -F setup.in
-
-Reduce number of G-vectors:
-
-```
-MaxGvecs=  1000           RL    # [INI] Max number of G-vectors planned to use
-```
-
-Then run initialization of non-liner calculation:
-
-> yambo_nl -F setup.in   
-
-
-Reduce symmetries. For that, we generate input file for *ypp*:
-
-> ypp -y     
-
-and in the input file we add *y* component of electric field (Efield1) and uncomment RmTimeRev:
-
-After that run ypp:  
-
-> ypp   
-
-go to *FixSymm* directory and run setup again:
-
->  yambo_nl -F ../setup_nl.in   
-
-Now everything is ready for calculation of linear response. For that we generate input file:   
-
-> yambo_nl -u -F input_lr.in -V par    
-
-and change the band range for non-linear calculation:
-
-```
-% NLBands
-  3 | 6 |                   # [NL] Bands
-%
-```
-where 3 and 4 are two valence bands and 5, 6 are two bands from conduction band.  
- 
 Submit job for real-time dynamics on 48 cores (calc. time 7m40s):   
 
-> yambo_nl -F yambo_shg.in   
-
-File [o.polarization_F1](https://github.com/Dmitry-Skachkov/Yambo_examples/blob/main/Example_5/o.polarization_F1) will contain the polarization. 
-
+> sbatch job_yambo_nl   
 
 
 [Go to top](#yambo-usage)
