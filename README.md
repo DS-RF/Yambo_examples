@@ -376,7 +376,7 @@ and change the band range for non-linear calculation:
   3 | 6 |                   # [NL] Bands
 %
 ```
-where 3 and 4 are two valence bands and 5, 6 are two bands from conduction band.  
+where 3 and 4 are two valence bands and 5, 6 are two bands from conduction band.  http://www.attaccalite.com/lumen/shg_in_AlAs.html
  
 Run real time dynamics to calculate linear response (calc. time 2m30s):   
 
@@ -389,11 +389,11 @@ File [o.polarization_F1](https://github.com/Dmitry-Skachkov/Yambo_examples/blob/
 
 ## Second harmonic generation 
 
-Example from [Lumen web-site](http://www.attaccalite.com/lumen/linear_response.html)    
+Example from [Lumen web-site](http://www.attaccalite.com/lumen/shg_in_AlAs.html)    
 
-At first, you need to do QE calculation ([scf](https://github.com/Dmitry-Skachkov/Yambo_examples/blob/main/Example_5/) and [nscf](https://github.com/Dmitry-Skachkov/Yambo_examples/blob/main/Example_5/)) and convert the data files to Yambo format (see [Example 1](#example-1)). 
+Do QE calculation ([scf](https://github.com/Dmitry-Skachkov/Yambo_examples/blob/main/Example_5/) and [nscf](https://github.com/Dmitry-Skachkov/Yambo_examples/blob/main/Example_5/)) and convert the data files to Yambo format (see [Example 1](#example-1)). 
 
-In order to setup calculation for linear responce:
+To setup calculation for linear responce:
 
 > yambo_nl -i -V RL -F setup.in
 
@@ -408,7 +408,7 @@ Then run initialization of non-liner calculation:
 > yambo_nl -F setup.in   
 
 
-Then it is necessary to reduce symmetries. For that, we generate input file for *ypp*:
+Reduce symmetries. For that, we generate input file for *ypp*:
 
 > ypp -y     
 
@@ -435,9 +435,9 @@ and change the band range for non-linear calculation:
 ```
 where 3 and 4 are two valence bands and 5, 6 are two bands from conduction band.  
  
-Run real time dynamics to calculate linear response (calc. time 2m30s):   
+Submit job for real-time dynamics on 48 cores (calc. time 7m40s):   
 
-> yambo_nl -F input_lr.in   
+> yambo_nl -F yambo_shg.in   
 
 File [o.polarization_F1](https://github.com/Dmitry-Skachkov/Yambo_examples/blob/main/Example_5/o.polarization_F1) will contain the polarization. 
 
