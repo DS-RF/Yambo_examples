@@ -395,6 +395,19 @@ Do [Example 5](#example-5) first, and then generate input file for secong harmon
 
 > yambo_nl -u -V par -F input_shg.in     
 
+Change the band range, energy range, energy steps, damping, and electric field:
+```
+% NLBands
+  3 | 6 |                   # [NL] Bands
+%
+% NLEnRange
+  1.000000 | 5.000000 | eV    # [NL] Energy range
+%
+NLEnSteps= 10                # [NL] Energy steps
+NLDamping= 0.150000    eV    # [NL] Damping
+% ExtF_Dir
+ 0.000000 | 1.000000 | 0.000000 |        # [NL ExtF] Versor
+```
 Submit job on 48 cores for real-time dynamics (calc. time 7m40s):   
 
 > sbatch [job_yambo_nl](https://github.com/Dmitry-Skachkov/Yambo_examples/blob/main/Example_6/job_yambo_nl)   
