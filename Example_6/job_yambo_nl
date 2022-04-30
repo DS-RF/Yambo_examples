@@ -1,12 +1,12 @@
 #!/bin/bash
-#SBATCH --job-name=MoS2_16
+#SBATCH --job-name=SHG
 #SBATCH --time=1:00:00
 #SBATCH --nodes=1 
 #SBATCH --ntasks-per-node=48
 #SBATCH --cpus-per-task=1
 #SBATCH --mem=384000
-#SBATCH --account=mleuenberger
-#SBATCH --mail-user=d.g.skachkov@gmail.com
+#SBATCH --account=ACCOUNT_NAME
+#SBATCH --mail-user=EMAIL@gmail.com
 #SBATCH --mail-type=END
 #SBATCH --error=error.txt
 #SBATCH --output=output.txt
@@ -24,7 +24,7 @@ echo "number of MPI processes   = $PPN"
 echo "number of OpenMP threads  = $OMP_NUM_THREADS"
 
 ### Yambo
-mpirun   -np $PPN  ~/bin/yambo_sp/yambo_nl -F yambo_shg.in 
+mpirun   -np $PPN  yambo_nl -F yambo_shg.in 
  
 
 
