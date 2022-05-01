@@ -292,6 +292,8 @@ Please note, that in order to use hybrid OpenMP/MPI calculation you need to have
 
 ## Linear responce 
 
+### Setup calculation
+
 This example is from [Lumen web-site](http://www.attaccalite.com/lumen/linear_response.html)  
 
 At first, you need to do QE calculation ([scf](https://github.com/Dmitry-Skachkov/Yambo_examples/blob/main/Example_5/) and [nscf](https://github.com/Dmitry-Skachkov/Yambo_examples/blob/main/Example_5/)) and convert the data files to Yambo format (see [Example 1](#example-1)). SAVE directory will contain the following files:
