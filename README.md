@@ -292,7 +292,7 @@ Please note, that in order to use hybrid OpenMP/MPI calculation you need to have
 
 ## Linear responce 
 
-Example from [Lumen web-site](http://www.attaccalite.com/lumen/linear_response.html)  
+This example is from [Lumen web-site](http://www.attaccalite.com/lumen/linear_response.html)  
 
 At first, you need to do QE calculation ([scf](https://github.com/Dmitry-Skachkov/Yambo_examples/blob/main/Example_5/) and [nscf](https://github.com/Dmitry-Skachkov/Yambo_examples/blob/main/Example_5/)) and convert the data files to Yambo format (see [Example 1](#example-1)). SAVE directory will contain the following files:
 ```
@@ -396,7 +396,7 @@ File [o.polarization_F1](https://github.com/Dmitry-Skachkov/Yambo_examples/blob/
 
 ## Second harmonic generation 
 
-Example from [Lumen web-site](http://www.attaccalite.com/lumen/shg_in_AlAs.html)    
+This example is from [Lumen web-site](http://www.attaccalite.com/lumen/shg_in_AlAs.html)    
 
 Do [Example 5](#example-5) first, and then generate input file for second harmonic calculation:
 
