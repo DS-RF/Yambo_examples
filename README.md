@@ -365,6 +365,8 @@ go to *FixSymm* directory and run setup again:
 
 >  yambo_nl -F ../setup_nl.in   
 
+### Real time dynamics for linear response   
+
 Now everything is ready for calculation of linear response. For that we generate input file:   
 
 > yambo_nl -u -F input_lr.in -V par    
