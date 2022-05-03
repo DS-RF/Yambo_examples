@@ -409,7 +409,7 @@ Do [Example 5](#example-5) **Setup calculation**, and then generate input file f
 where -V qp means quasy-particle correction (by GW or by scissor correction)   
 and -V par asks to generate parameters for parallelization
 
-Change the band range, energy range, energy steps, damping, and electric field:
+Change the band range, energy range, energy steps, damping, electric field, and set scissor correction to 0.5 eV:
 ```
 % NLBands
   3 | 6 |                          # [NL] Bands
