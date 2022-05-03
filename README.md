@@ -421,7 +421,7 @@ NLEnSteps= 10                      # [NL] Energy steps
 NLDamping= 0.150000    eV          # [NL] Damping
 % ExtF_Dir
  0.000000 | 1.000000 | 0.000000 |  # [NL ExtF] Versor
- % GfnQP_E
+% GfnQP_E
  0.500000 | 1.000000 | 1.000000 |        # [EXTQP G] E parameters  (c/v) eV|adim|adim
 %
 
