@@ -398,7 +398,7 @@ File [o.polarization_F1](https://github.com/Dmitry-Skachkov/Yambo_examples/blob/
 
 # Example 6  
 
-## Second harmonic generation 
+## Second harmonic generation (SHG) 
 
 This example is from Lumen web-site [SHG](http://www.attaccalite.com/lumen/shg_in_AlAs.html) and [Correlation and SHG](http://www.attaccalite.com/lumen/correlation_and_shg.html)   
 
