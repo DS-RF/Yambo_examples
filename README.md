@@ -407,6 +407,7 @@ Do [Example 5](#example-5) **Setup calculation**, and then generate input file f
 > yambo_nl -u -V par -V qp -F yambo_shg.in     
 
 where -V qp means quasy-particle correction (by GW or by scissor correction)
+and -V par asks to generate parameters for parallelization
 
 Change the band range, energy range, energy steps, damping, and electric field:
 ```
