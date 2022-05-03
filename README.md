@@ -404,7 +404,7 @@ This example is from [Lumen web-site](http://www.attaccalite.com/lumen/shg_in_Al
 
 Do [Example 5](#example-5) **Setup calculation**, and then generate input file for second harmonic calculation:
 
-> yambo_nl -u -V par -F yambo_shg.in     
+> yambo_nl -u -V par -V qp -F yambo_shg.in     
 
 Change the band range, energy range, energy steps, damping, and electric field:
 ```
@@ -418,6 +418,10 @@ NLEnSteps= 10                      # [NL] Energy steps
 NLDamping= 0.150000    eV          # [NL] Damping
 % ExtF_Dir
  0.000000 | 1.000000 | 0.000000 |  # [NL ExtF] Versor
+ % GfnQP_E
+ 0.500000 | 1.000000 | 1.000000 |        # [EXTQP G] E parameters  (c/v) eV|adim|adim
+%
+
 ```
 The modified input file [yambo_shg.in](https://github.com/Dmitry-Skachkov/Yambo_examples/blob/main/Example_6/yambo_shg.in)
 
