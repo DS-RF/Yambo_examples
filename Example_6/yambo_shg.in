@@ -35,6 +35,25 @@ EXXRLvcs=  965             RL    # [XX] Exchange    RL components
 %
 ExtF_kind= "SOFTSIN"             # [NL ExtF] Kind(SIN|SOFTSIN|RES|ANTIRES|GAUSS|DELTA|QSSIN)
 
+GfnQPdb= "none"                  # [EXTQP G] Database action
+GfnQP_INTERP_NN= 1               # [EXTQP G] Interpolation neighbours (NN mode)
+GfnQP_INTERP_shells= 20.00000    # [EXTQP G] Interpolation shells (BOLTZ mode)
+GfnQP_DbGd_INTERP_mode= "NN"     # [EXTQP G] Interpolation DbGd mode
+% GfnQP_E
+ 0.500000 | 1.000000 | 1.000000 |        # [EXTQP G] E parameters  (c/v) eV|adim|adim
+%
+GfnQP_Z= ( 1.000000 , 0.000000 )         # [EXTQP G] Z factor  (c/v)
+GfnQP_Wv_E= 0.000000       eV    # [EXTQP G] W Energy reference  (valence)
+% GfnQP_Wv
+ 0.000000 | 0.000000 | 0.000000 |        # [EXTQP G] W parameters  (valence) eV| 1|eV^-1
+%
+GfnQP_Wv_dos= 0.000000     eV    # [EXTQP G] W dos pre-factor  (valence)
+GfnQP_Wc_E= 0.000000       eV    # [EXTQP G] W Energy reference  (conduction)
+% GfnQP_Wc
+ 0.000000 | 0.000000 | 0.000000 |        # [EXTQP G] W parameters  (conduction) eV| 1 |eV^-1
+%
+GfnQP_Wc_dos= 0.000000     eV    # [EXTQP G] W dos pre-factor  (conduction)
+
 NLogCPUs=10                      # [PARALLEL] Live-timing CPU`s (0 for all)
 PAR_def_mode= "balanced"         # [PARALLEL] Default distribution mode ("balanced"/"memory"/"workload") 
 
