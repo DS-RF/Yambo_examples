@@ -116,6 +116,16 @@ Download LibXC library and unpack:
 
 The library files will be in ~/Libraries/libxc-5.2.2/bin
 
+### Compilation of HDF5 library   
+
+Download archive from https://www.hdfgroup.org   
+
+> tar -xvf hdf5-1.12.0.tar.gz   
+> cd hdf5-1.12.0   
+> ./configure FC=gfortran F77=gfortran CC=gcc --enable-fortran   
+> make   
+
+
 
 [Go to top](#yambo-usage)
 
