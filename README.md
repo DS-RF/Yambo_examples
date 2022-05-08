@@ -130,8 +130,8 @@ The library modules will be in ~/hdf5-1.12.0/hdf5
 
 ### Compiling Yambo code with external libraries   
 
-> ./configure FC=gfortran F77=gfortran CC=gcc --enable-dp --with-libxc-path=~/Libraries/libxc-5.2.2/bin 
->                                                         --with-hdf5-path=~/Libraries/hdf5-1.12.0/hdf5 
+> ./configure FC=gfortran F77=gfortran CC=gcc --enable-dp --with-libxc-path=`~`/Libraries/libxc-5.2.2/bin 
+>                                                         --with-hdf5-path=`~`/Libraries/hdf5-1.12.0/hdf5 
 
 
 [Go to top](#yambo-usage)
