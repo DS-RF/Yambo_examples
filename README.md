@@ -102,6 +102,8 @@ Currently Loaded Modules:
   2) mvapich2/mvapich2-2.3.2-gcc-9.1.0
 ```
 
+### Compilation of LibXC library      
+
 Download LibXC library and unpack:   
 
 > wget http://www.tddft.org/programs/libxc/down.php?file=5.2.2/libxc-5.2.2.tar.gz   
@@ -110,13 +112,6 @@ Download LibXC library and unpack:
 > ./configure FC=gfortran F77=gfortran CC=gcc 
 > make 
 > make install   
-
-
-
-
-### Compilation of LibXC library   
-
-Download 
 
 
 [Go to top](#yambo-usage)
