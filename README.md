@@ -8,7 +8,9 @@
 * [Example 5. Linear response](#example-5)
 * [Example 6. Second harmonic generation](#example-6)
 
-# Yambo installation on Stokes Supercluster of UCF
+# Yambo installation on Stokes Supercluster of UCF   
+
+## Automatic installation of version 5.0.4   
 
 Copy the latest release of Yambo code and unpack:  
 
@@ -82,6 +84,14 @@ Check yambo version:
 ```
 This is yambo - MPI+OpenMP+HDF5_IO - Ver. 5.0.4 Revision 19595 Hash 896bffc02
 ```
+
+## Separate compilation of libraries   
+
+Here we consider how to compile Yambo code using external libraries necessary for the code, HDF5, LibXC.  
+
+
+
+[Go to top](#yambo-usage)
 
 # Example 1
 
