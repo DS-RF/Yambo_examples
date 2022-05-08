@@ -134,6 +134,12 @@ The library modules will be in ~/hdf5-1.12.0/hdf5
 >                                                         --with-hdf5-path=`~`/Libraries/hdf5-1.12.0/hdf5 
 
 
+## Compilation version 5.1.1   
+
+> module load hdf5/hdf5-1.10.4-mvapich2-2.3.1-ic-2019.3.199   
+> ./configure --enable-dp --with-hdf5-path=/apps/hdf5/hdf5-1.10.4-mvapich2-2.3.1-ic-2019.3.199/   
+> make all    
+
 [Go to top](#yambo-usage)
 
 # Example 1
