@@ -89,6 +89,29 @@ This is yambo - MPI+OpenMP+HDF5_IO - Ver. 5.0.4 Revision 19595 Hash 896bffc02
 
 Here we consider how to compile Yambo code using external libraries necessary for the code, HDF5, LibXC.  
 
+Let us directory with external libraries will be ~/Libraries/.   
+
+Load fortran/c complier and mvapich libaries:   
+
+> module load mvapich2/mvapich2-2.3.2-gcc-9.1.0   
+> module list
+
+```
+Currently Loaded Modules:
+  1) gcc/gcc-9.1.0   
+  2) mvapich2/mvapich2-2.3.2-gcc-9.1.0
+```
+
+Download LibXC library and unpack:   
+
+> wget http://www.tddft.org/programs/libxc/down.php?file=5.2.2/libxc-5.2.2.tar.gz   
+> tar -xvf libxc-5.2.2.tar.gz  
+
+
+
+### Compilation of LibXC library   
+
+Download 
 
 
 [Go to top](#yambo-usage)
