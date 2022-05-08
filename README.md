@@ -106,6 +106,11 @@ Download LibXC library and unpack:
 
 > wget http://www.tddft.org/programs/libxc/down.php?file=5.2.2/libxc-5.2.2.tar.gz   
 > tar -xvf libxc-5.2.2.tar.gz  
+> cd libxc-5.2.2
+> ./configure FC=gfortran F77=gfortran CC=gcc 
+> make 
+> make install   
+
 
 
 
