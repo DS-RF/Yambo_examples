@@ -8,8 +8,9 @@
 * [Example 2. GW band structure](#example-2)  
 * [Example 3. Optical properties](#example-3)  
 * [Example 4. Parallel calculation](#example-4)
-* [Example 5. Linear response](#example-5)
-* [Example 6. Second harmonic generation](#example-6)
+* [Example 5. Linear response with IPA approximation](#example-5)
+* [Example 6. Second harmonic generation with IPA approximation](#example-6)
+* [Example 7. Linear response with time-dependent BSE](#example-7)
 
 # Yambo installation on Stokes Supercluster of UCF   
 
@@ -508,4 +509,12 @@ Submit job on 48 cores for real-time dynamics (calc. time 40m7s):
 > sbatch [job_yambo_nl](https://github.com/Dmitry-Skachkov/Yambo_examples/blob/main/Example_6/job_yambo_nl)   
 
 
-[Go to top](#yambo-usage)
+[Go to top](#yambo-usage)     
+
+
+# Example 7   
+
+## Linear response with time-dependent BSE   
+
+
+
