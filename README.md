@@ -516,5 +516,5 @@ Submit job on 48 cores for real-time dynamics (calc. time 40m7s):
 
 ## Linear response with time-dependent BSE   
 
-
+Following [Lumen web-site](http://www.attaccalite.com/lumen/real_time_bse.html)
 
