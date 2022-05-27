@@ -522,6 +522,12 @@ Do [Example 5](#example-5) **Setup calculation** at first and do initialization 
 
 > yambo_nl -F setup.in   
 
+Generate input file for collisions calculation:
+
+> yambo_nl -d s -e -v h+sex   
+
+and reduce the parameters of calculation:
+
 
 
 
