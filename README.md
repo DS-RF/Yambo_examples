@@ -518,3 +518,11 @@ Submit job on 48 cores for real-time dynamics (calc. time 40m7s):
 
 Following [Lumen web-site](http://www.attaccalite.com/lumen/real_time_bse.html)
 
+Do [Example 5](#example-5) **Setup calculation** at first and do initialization of non-linear calculation:
+
+> yambo_nl -F setup.in   
+
+
+
+
+
