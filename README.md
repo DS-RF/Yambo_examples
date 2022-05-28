@@ -12,7 +12,7 @@
 * [Example 6. Second harmonic generation with IPA approximation](#example-6)
 * [Example 7. Linear response with time-dependent BSE](#example-7)
 
-# Yambo installation on Stokes Supercluster of UCF   
+# Yambo installation on [Stokes Supercluster of UCF](https://arcc.ist.ucf.edu)   
 
 ## Automatic installation of version 5.0.4   
 
