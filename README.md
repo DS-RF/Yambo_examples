@@ -529,14 +529,12 @@ Generate input file for collisions calculation:
 and reduce the parameters of calculation:
 
 ```
-NGsBlkXs= 1000 mHa      # [Xs] Response block size
 % COLLBands
    4 |  5 |                   # [COLL] Bands for the collisions
 %
-HARRLvcs= 1000 mHa      # [HA] Hartree     RL components
-EXXRLvcs= 1000 mHa      # [XX] Exchange    RL components
-CORRLvcs= 1000 mHa      # [GW] Correlation RL components
-```
+```   
+Here 4 is the VBM and 5 is CBM orbitals.
+
 
 [Go to top](#yambo-usage)  
 
