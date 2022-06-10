@@ -223,7 +223,37 @@ Correct input file by uncomment **RmTimeRev**.
 > yambo  
 > ypp -s b -V qp    
 
-The last command creates the file ypp.in, which is necessary to correct, insert the directory with quasi-particle correction and the k-pathway for plot. The corrected file [ypp.in](https://github.com/Dmitry-Skachkov/Yambo_examples/blob/main/Example_2/ypp.in)  
+The last command creates the file ypp.in, which is necessary to correct.   
+
+Change interpolation to BOLTZ in order to have smooth band curves:   
+
+> INTERP_mode= "BOLTZ"                # Interpolation mode (NN=nearest point, BOLTZ=boltztrap aproach)
+
+Select 10 bands for plotting:    
+
+> % BANDS_bands
+>    11 |  20 |                         # Number of bands
+>
+
+Change number of divisions for plotting:     
+
+> BANDS_steps= 20                  # Number of divisions     
+
+Add QP database: 
+
+> GfnQPdb= "E < SAVE/ndb.QP"                  # [EXTQP G] Database action
+
+Insert the k-points path:   
+
+> %BANDS_kpts                      # K points of the bands circuit
+> 0.00000 |0.000000 |0.00000 |
+> 0.66666 |-0.33333 |0.00000 |
+> 0.50000 |0.000000 |0.00000 |
+> 0.00000 |0.000000 |0.00000 |
+> %
+
+
+The corrected file [ypp.in](https://github.com/Dmitry-Skachkov/Yambo_examples/blob/main/Example_2/ypp.in)  
 
 To interpolate the GW band structure:
 
