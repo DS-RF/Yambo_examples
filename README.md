@@ -231,8 +231,8 @@ Change interpolation to BOLTZ in order to have smooth band curves:
 
 Select 10 bands for plotting:    
 
-> % BANDS_bands
->    11 |  20 |                         # Number of bands
+> % BANDS_bands     
+>    11 |  20 |                         # Number of bands     
 >
 
 Change number of divisions for plotting:     
@@ -245,12 +245,12 @@ Add QP database:
 
 Insert the k-points path:   
 
-> %BANDS_kpts                      # K points of the bands circuit
-> 0.00000 |0.000000 |0.00000 |
-> 0.66666 |-0.33333 |0.00000 |
-> 0.50000 |0.000000 |0.00000 |
-> 0.00000 |0.000000 |0.00000 |
-> %
+> %BANDS_kpts                      # K points of the bands circuit     
+> 0.00000 |0.000000 |0.00000 |     
+> 0.66666 |-0.33333 |0.00000 |     
+> 0.50000 |0.000000 |0.00000 |     
+> 0.00000 |0.000000 |0.00000 |     
+> %     
 
 
 The corrected file [ypp.in](https://github.com/Dmitry-Skachkov/Yambo_examples/blob/main/Example_2/ypp.in)  
