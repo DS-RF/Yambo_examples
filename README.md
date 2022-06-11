@@ -232,7 +232,7 @@ Change interpolation to BOLTZ in order to have smooth band curves:
 Select 10 bands for plotting:    
 
 > % BANDS_bands     
->    01 |  99 |                         # Number of bands     
+>    1 |  99 |                         # Number of bands     
 >
 
 Change number of divisions for plotting:     
