@@ -601,6 +601,7 @@ Here 4 is the VBM and 5 is CBM orbitals.
 
 ## Self-consistent GW
 
+Following [this tutorial](http://www.yambo-code.org/wiki/index.php?title=Self-consistent_GW_on_eigenvalues_only) 
 
 
 [Go to top](#yambo-usage) 
