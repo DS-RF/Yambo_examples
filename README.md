@@ -591,4 +591,10 @@ Correct QPkrange for bands (4 occupied + 6 virtual):
 %QPkrange   
 1|64|5|14|   
 ```   
+
+Submit job:   
+
+> sbatch job_yambo_evGW     
+
+
 [Go to top](#yambo-usage) 
