@@ -195,8 +195,9 @@ In order to run this example it is necessary to run Example 1 at first and conve
 The directory with the example [Example_2](https://github.com/Dmitry-Skachkov/Yambo_examples/tree/main/Example_2)  
 In order to create the input file for GW calculation:
 
-> yambo -x -g n -p p  
-> mv yambo.in yambo1.in  
+> yambo -x -g n -p p -F yambo_gw.in 
+
+Change the response block to 6 Ry.
 
 The detailed description of the example is [here](https://github.com/Dmitry-Skachkov/Yambo_examples/blob/main/Example_2/YAMBO_Tutorial-3.1_GW_Band_Structure.pdf)
 
