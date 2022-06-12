@@ -585,7 +585,7 @@ Correct GWIter parameter to 2:
 GWIter=2                         # [GW] GW  self-consistent (evGW)  iterations on eigenvalues
 ```
 
-Correct QPkrange for bands:
+Correct QPkrange for bands (4 occupied + 6 virtual):
 
 ```
 %QPkrange   
