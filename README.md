@@ -256,30 +256,9 @@ Insert the k-points path:
 
 The corrected file [ypp.in](https://github.com/Dmitry-Skachkov/Yambo_examples/blob/main/Example_2/ypp.in)  
 
-Run the script yambo_band_plot.sh:   
-```
-#!/bin/bash
+Run the script [yambo_band_plot.sh](Example_2/yambo_band_plot.sh):   
 
-rm o.bands_inter*
-
-# plot bands 1-10
-sed -i "s/   01 |  99 |/   01 |  10 |/" ypp.in
-~/bin/yambo_5.0.4_dp/ypp
-mv o.bands_interpolated 1
-
-# plot bands 11-20
-sed -i "s/   01 |  10 |/   11 |  20 |/" ypp.in
-~/bin/yambo_5.0.4_dp/ypp
-mv o.bands_interpolated 2
-
-# plot bands 21-30
-sed -i "s/   11 |  20 |/   21 |  30 |/" ypp.in
-~/bin/yambo_5.0.4_dp/ypp
-mv o.bands_interpolated 3
-
-# combine files 1, 2, 3 into bands_pl_yambo.dat
-yambo_band_plot
-```
+> yambo_band_plot.sh   
 
 The band structure will be in the file bands_pl_yambo.dat.
 
