@@ -576,5 +576,19 @@ Here 4 is the VBM and 5 is CBM orbitals.
 
 Following [this tutorial](http://www.yambo-code.org/wiki/index.php?title=Self-consistent_GW_on_eigenvalues_only) 
 
+Create input file for self-consitent GW (evGW) calculation:
 
+> yambo -d f -g n -p c -V qp -F yambo_evGW.in    
+
+Correct GWIter parameter to 2:
+```
+GWIter=2                         # [GW] GW  self-consistent (evGW)  iterations on eigenvalues
+```
+
+Correct QPkrange for bands:
+
+```
+%QPkrange   
+1|64|5|14|   
+```   
 [Go to top](#yambo-usage) 
