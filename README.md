@@ -578,7 +578,7 @@ Following [this tutorial](http://www.yambo-code.org/wiki/index.php?title=Self-co
 
 Create input file for self-consitent GW (evGW) calculation:
 
-> yambo -d f -g n -p c -V qp -F yambo_evGW.in    
+> yambo -d f -g n -p p -V qp -F yambo_evGW.in    
 
 Correct GWIter parameter to 2:
 ```
