@@ -266,7 +266,37 @@ Run the script [yambo_band_plot.sh](Example_2/yambo_band_plot.sh):
 The band structure will be in the file bands_pl_yambo.dat.
 
 
-[Go to top](#yambo-usage)
+[Go to top](#yambo-usage)   
+
+
+# Example 8
+
+## Self-consistent GW
+
+Following [this tutorial](http://www.yambo-code.org/wiki/index.php?title=Self-consistent_GW_on_eigenvalues_only) 
+
+Create input file for self-consitent GW (evGW) calculation:
+
+> yambo -d f -g n -p p -V qp -F yambo_evGW.in    
+
+Correct GWIter parameter to 2:
+```
+GWIter=2                         # [GW] GW  self-consistent (evGW)  iterations on eigenvalues
+```
+
+Correct QPkrange for bands (4 occupied + 6 virtual):
+
+```
+%QPkrange   
+1|64|5|14|   
+```   
+
+Submit job:   
+
+> sbatch job_yambo_evGW     
+
+
+[Go to top](#yambo-usage) 
 
 # Example 3
 
@@ -584,31 +614,3 @@ Correct electric field direction.
 
 [Go to top](#yambo-usage)  
 
-# Example 8
-
-## Self-consistent GW
-
-Following [this tutorial](http://www.yambo-code.org/wiki/index.php?title=Self-consistent_GW_on_eigenvalues_only) 
-
-Create input file for self-consitent GW (evGW) calculation:
-
-> yambo -d f -g n -p p -V qp -F yambo_evGW.in    
-
-Correct GWIter parameter to 2:
-```
-GWIter=2                         # [GW] GW  self-consistent (evGW)  iterations on eigenvalues
-```
-
-Correct QPkrange for bands (4 occupied + 6 virtual):
-
-```
-%QPkrange   
-1|64|5|14|   
-```   
-
-Submit job:   
-
-> sbatch job_yambo_evGW     
-
-
-[Go to top](#yambo-usage) 
