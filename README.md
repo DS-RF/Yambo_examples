@@ -563,11 +563,22 @@ and reduce the parameters of calculation:
 
 ```
 % COLLBands
-   4 |  5 |                   # [COLL] Bands for the collisions
+   5 |  14 |                   # [COLL] Bands for the collisions
 %
 ```   
-Here 4 is the VBM and 5 is CBM orbitals.
+Here 5-8 is the occupied orbitals + 6 virtual.
 
+Add QP database:
+
+```
+XfnQPdb= "E < SAVE/ndb.QP"
+```
+Change response block:
+
+```
+NGsBlkXs= 10 Ry
+```
+Correct electric field direction.
 
 [Go to top](#yambo-usage)  
 
