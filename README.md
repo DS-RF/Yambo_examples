@@ -620,7 +620,7 @@ Submit the job for calculation:
 
 > sbatch job_yambo_coll   
 
-Calculation time is 1h for "workload" and 1h40m for "balanced" parallel distribution.   
+Calculation time is 1h for "workload" and 1h40m for "balanced" parallel distribution on 8 nodes with 48 cores.   
 
 ```
 PAR_def_mode= "workload"      # [PARALLEL] Default distribution mode ("balanced"/"memory"/"workload")
