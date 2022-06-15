@@ -513,7 +513,7 @@ go to *FixSymm* directory and run setup again:
 
 Now everything is ready for calculation of linear response. For that we generate input file:   
 
-> yambo_nl -u -F input_lr.in -V par    
+> yambo_nl -u n -F input_lr.in -V par    
 
 and change the band range, simulation time, energy steps, dampling, electric field, and type of electric field:
 
