@@ -570,7 +570,7 @@ and reduce the parameters of calculation:
 ```   
 Here 5-8 is the occupied orbitals + 6 virtual.
 
-Add QP database:
+Add GW QP database:
 
 ```
 XfnQPdb= "E < SAVE/ndb.QP"
