@@ -8,7 +8,7 @@
 * [Example 2. GW calculation](#example-2)  
 * [Example 8. Self-consistent GW](#example-8)
 * [Example 4. Parallel calculation](#example-4)
-* [Example 3. Optical properties (linear response with BSE)](#example-3)  
+* [Example 3. Linear response with GW - BSE)](#example-3)  
 * [Example 5. Linear response with IPA - TD BSE](#example-5)
 * [Example 6. Second harmonic generation with IPA - TD BSE](#example-6)
 * [Example 7. Linear response with GW - TD BSE](#example-7)   
