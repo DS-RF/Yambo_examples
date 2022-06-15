@@ -6,7 +6,7 @@
     * [Compilation version 5.1.1](#compilation-version-511)   
 * [Example 1. Ground state calculation](#example-1)  
 * [Example 2. GW band structure](#example-2)  
-* [Example 3. Optical properties](#example-3)  
+* [Example 3. Optical properties (linear response with BSE)](#example-3)  
 * [Example 4. Parallel calculation](#example-4)
 * [Example 5. Linear response with IPA approximation](#example-5)
 * [Example 6. Second harmonic generation with IPA approximation](#example-6)
