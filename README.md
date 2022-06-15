@@ -6,12 +6,13 @@
     * [Compilation version 5.1.1](#compilation-version-511)   
 * [Example 1. Ground state calculation](#example-1)  
 * [Example 2. GW band structure](#example-2)  
-* [Example 3. Optical properties (linear response with BSE)](#example-3)  
+* [Example 8. Self-consistent GW](#example-8)
 * [Example 4. Parallel calculation](#example-4)
+* [Example 3. Optical properties (linear response with BSE)](#example-3)  
 * [Example 5. Linear response with TD BSE and IPA approximation](#example-5)
 * [Example 6. Second harmonic generation with TD BSE and IPA approximation](#example-6)
 * [Example 7. Linear response with GW - TD BSE](#example-7)
-* [Example 8. Self-consistent GW](#example-8)
+
 
 # Yambo installation on [Stokes Supercluster of UCF](https://arcc.ist.ucf.edu)   
 
