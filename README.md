@@ -614,7 +614,24 @@ Change response block:
 ```
 NGsBlkXs= 10 Ry
 ```
-Correct electric field direction.
+Correct electric field direction.   
 
+Submit the job for calculation:    
+
+> sbatch job_yambo_coll   
+
+Calculation time is 1h for "workload" and 1h40m for "balanced" parallel distribution.   
+
+```
+PAR_def_mode= "workload"      # [PARALLEL] Default distribution mode ("balanced"/"memory"/"workload")
+```
+
+Aftger the calculation the folder SAVe will contain:
+
+```
+ndb.COLLISIONS*
+ndb.dipoles
+ndb.em1s*
+```
 [Go to top](#yambo-usage)  
 
