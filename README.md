@@ -591,7 +591,7 @@ Do [Example 5](#example-5) **Setup calculation** at first and do initialization 
 
 Generate input file for collisions calculation:
 
-> yambo_nl -d s -e -v h+sex -V qp -F yambo_lr_tdbse.in       
+> yambo_nl -d s -e -v h+sex -V qp -F yambo_coll.in       
 
 and reduce the parameters of calculation:
 
