@@ -21,7 +21,7 @@
 
 
 
-# Yambo installation on [Stokes Supercluster of UCF](https://arcc.ist.ucf.edu)   
+# [Yambo](http://www.yambo-code.org/) installation on [Stokes Supercluster of UCF](https://arcc.ist.ucf.edu)   
 
 ## Automatic installation of version 5.0.4   
 
