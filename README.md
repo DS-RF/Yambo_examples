@@ -713,7 +713,7 @@ Run
 
 > ypp_nl -u   
 
-and change energy range, DampMpde and DampFactor:   
+and change energy range, DampMode and DampFactor:   
 ```
 % EnRngeRt
   0.00000 | 10.00000 |         eV    # Energy range
