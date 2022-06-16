@@ -12,6 +12,7 @@
 * [Example 6. Linear response with IPA - TD BSE](#example-6)
 * [Example 7. Second harmonic generation with IPA - TD BSE](#example-7)
 * [Example 8. Linear response and SHG with GW - TD BSE](#example-8)   
+    * [SHG with GW-TD BSE](#shg-with-gw-td-bse)
     * [Analyze results for SHG](#analyze-resulst-for-shg) 
 
 
