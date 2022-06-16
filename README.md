@@ -680,6 +680,10 @@ Submit the calculation for real time dynamics to calculate linear response (calc
 
 > sbatch job_yambo_lr  
 
+Note. If you need to resubmitt the calculation, youi can remove dipoles files:   
+ > rm SAVE/*dipoles*
+ > rm SAVE/*kind*   
+
 ### Analyze results for LR   
 
 Run
