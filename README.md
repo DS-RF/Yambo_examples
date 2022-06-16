@@ -624,7 +624,7 @@ and reduce the parameters of calculation:
    5 |  14 |                   # [COLL] Bands for the collisions
 %
 ```   
-Here 5-8 is the occupied orbitals + 6 virtual.
+Here 5-8 is the occupied orbitals + 6 virtual (9-14).
 
 Add GW QP database:
 
