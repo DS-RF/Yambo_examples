@@ -416,7 +416,7 @@ Please note, that in order to use hybrid OpenMP/MPI calculation you need to have
 
 ## Calculation of Optical Properties with YAMBO
 
-The detailed description of the example [YAMBO_Tutorial-4_Calculation_of_Optical_Properties_with_YAMBO.pdf](https://github.com/Dmitry-Skachkov/Yambo_examples/blob/main/Example_3/YAMBO_Tutorial-4_Calculation_of_Optical_Properties_with_YAMBO.pdf)   
+The detailed description of the example [YAMBO_Tutorial-4_Calculation_of_Optical_Properties_with_YAMBO.pdf](Example_05/YAMBO_Tutorial-4_Calculation_of_Optical_Properties_with_YAMBO.pdf)   
 
 This example is taken from [https://www.paradim.org](https://www.paradim.org/toolbox/computation/tutorials)  
 
@@ -431,13 +431,13 @@ To correct *yambo2.in* file to insert QP correction:
 
 > KfnQPdb= "E < SAVE/ndb.QP" # [EXTQP BSK BSS] Database 
 
-The corrected file [yambo2.in](https://github.com/Dmitry-Skachkov/Yambo_examples/blob/main/Example_3/yambo2.in)  
+The corrected file [yambo2.in](Example_05/yambo2.in)  
 
 To run the GW-BSE calculation (calculation time is 16m):
 
-> sbatch [job_yambo](https://github.com/Dmitry-Skachkov/Yambo_examples/blob/main/Example_3/job_yambo)  
+> sbatch [job_yambo](Example_05/job_yambo)  
 
-The results of GW-BSE calculation is in the file [r_optics_dipoles_bss_bse_em1d_ppa](https://github.com/Dmitry-Skachkov/Yambo_examples/blob/main/Example_3/r_optics_dipoles_bss_bse_em1d_ppa) with the results in file [o.eps_q1_haydock_bse](https://github.com/Dmitry-Skachkov/Yambo_examples/blob/main/Example_3/o.eps_q1_haydock_bse), EPS-Im versus E.   
+The results of GW-BSE calculation is in the file [r_optics_dipoles_bss_bse_em1d_ppa](Example_05/r_optics_dipoles_bss_bse_em1d_ppa) with the results in file [o.eps_q1_haydock_bse](Example_05/o.eps_q1_haydock_bse), EPS-Im versus E.   
 
 [Go to top](#yambo-usage)
 
