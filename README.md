@@ -698,7 +698,7 @@ Submit the calculation for real time dynamics to calculate linear response (calc
 
 > sbatch [job_yambo_lr](Example_08/job_yambo_lr)  
 
-Yambo_nl does not allow to calculate on more nodes because of nothing to parallelize.    
+Yambo_nl does not allow to calculate on more than 2 nodes because of nothing to parallelize.    
 
 Note. If you need to resubmitt the calculation, you need to remove dipoles files:   
 ```
