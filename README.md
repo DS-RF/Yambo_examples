@@ -280,6 +280,8 @@ The band structure will be in the file bands_pl_yambo.dat.
 
 Following [this tutorial](http://www.yambo-code.org/wiki/index.php?title=Self-consistent_GW_on_eigenvalues_only) 
 
+### Automatic self-consistent procedure
+
 Create input file for self-consitent GW (evGW) calculation:
 
 > yambo -d f -g n -p p -V qp -F yambo_evGW.in    
@@ -300,6 +302,7 @@ Submit job:
 
 > sbatch job_yambo_evGW     
 
+### Manual self-consistent procedure   
 
 [Go to top](#yambo-usage)    
 
