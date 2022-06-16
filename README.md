@@ -728,7 +728,7 @@ Then run
 
 To plot eps   
 
-> gnuplot plot_eps.gnu    
+> gnuplot [plot_eps.gnu](Example_08/plot_eps.gnu)    
 
 The result is plot_eps.pdf    
 
