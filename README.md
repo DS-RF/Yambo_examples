@@ -626,7 +626,7 @@ Correct electric field direction.
 
 Submit the job for calculation:    
 
-> sbatch job_yambo_coll   
+> sbatch [job_yambo_coll](Example_08/job_yambo_coll)   
 
 Calculation time is 1h for "workload" and 1h40m for "balanced" parallel distribution on 8 nodes with 48 cores.   
 
