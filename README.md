@@ -593,14 +593,15 @@ Submit job on 48 cores for real-time dynamics (calc. time 40m7s):
 
 Following [Lumen web-site](http://www.attaccalite.com/lumen/real_time_bse.html)
 
-Setup NL calculation: 
+### Setup NL calculation   
 
-> yambo_nl -i -V RL -F setup.in             # Initialize NL calculation       
-> yambo_nl -F setup.in                      # Setup NL calculation      
-> ypp -y                                    # prepare to remove symmetry for the system      
-> ypp                                       # remove symmetry      
-> cd FixSymm                                # go to directory with removed symmetry     
-> yambo_nl -F ../setup.in                   # setup NL calculations     
+
+> yambo_nl -i -V RL -F setup.in                
+> yambo_nl -F setup.in                        
+> ypp -y                                        
+> ypp                                           
+> cd FixSymm                                  
+> yambo_nl -F ../setup.in                   
 
 For more detailes of this step please see [Example 6](#example-6) **Setup calculation**.     
 
