@@ -752,7 +752,9 @@ Run SHG calculation:
 
 > sbatch [job_yambo_shg](Example_08/job_yambo_shg)   
 
-calculation time on 10 nodes with 48 cores is 25h. 
+calculation time on 10 nodes with 48 cores is 25h.    
+
+If calculations were crashed, then you need to resubmit the job, Yambo will contin ue calculation from the interrupted point. 
 
 ### Analyze resulst for SHG   
 
