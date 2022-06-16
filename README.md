@@ -635,9 +635,9 @@ ndb.em1s*
 ```   
 ### Linear response   
 
-In order to setup calculation for linear responce:
+To generate input file for linear response:   
 
-> yambo_nl -i -V RL -F setup.in   
+> yambo_nl -u n -V qp -F input_lr.in    
 
 
 [Go to top](#yambo-usage)  
