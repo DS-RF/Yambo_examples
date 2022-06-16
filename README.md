@@ -736,7 +736,7 @@ Field1_kind= "SOFTSIN"           # [RT Field1] Kind(SIN|RES|ANTIRES|GAUSS|DELTA|
 
 Run SHG calculation:
 
-> sbatch job_yambo_shg   
+> sbatch [job_yambo_shg](Example_08/job_yambo_shg)   
 
 calculation time is 
 
