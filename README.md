@@ -639,11 +639,11 @@ To generate input file for linear response:
 
 > yambo_nl -u n -V qp -F input_lr.in    
 
-and change the band range, simulation time, energy steps, dampling, electric field, and type of electric field:
+and change the NLBands according to COLLBands, simulation time (55 fs), energy steps (1), dampling (0.1), electric field direction, and type of electric field to DELTA:
 
 ```
 % NLBands
-  3 | 6 |                   # [NL] Bands
+  5 | 14 |                   # [NL] Bands
 %
 NLtime=55.000000      fs     # [NL] Simulation Time
 NLEnSteps= 1                 # [NL] Energy steps
@@ -653,13 +653,12 @@ NLDamping= 0.000000    eV    # [NL] Damping
 %
 ExtF_kind= "DELTA"               # [NL ExtF] Kind(SIN|SOFTSIN|RES|ANTIRES|GAUSS|DELTA|QSSIN)
 ```
-where 3 and 4 are two valence bands and 5, 6 are two bands from conduction band. 
+
  
-Run real time dynamics to calculate linear response (calc. time 2m30s):   
+Submit the calculation for real time dynamics to calculate linear response (calc. time ):   
 
-> yambo_nl -F input_lr.in   
+> sbatch job_yambo_lr  
 
-File [o.polarization_F1](https://github.com/Dmitry-Skachkov/Yambo_examples/blob/main/Example_5/o.polarization_F1) will contain the polarization. 
 
 [Go to top](#yambo-usage)  
 
