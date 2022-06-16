@@ -451,7 +451,7 @@ This example is from [Lumen web-site](http://www.attaccalite.com/lumen/linear_re
 
 ### Setup calculation
 
-At first, you need to do QE calculation ([scf](https://github.com/Dmitry-Skachkov/Yambo_examples/blob/main/Example_5/) and [nscf](https://github.com/Dmitry-Skachkov/Yambo_examples/blob/main/Example_5/)) and convert the data files to Yambo format (see [Example 1](#example-1)). SAVE directory will contain the following files:
+At first, you need to do QE calculation ([scf](Example_06/) and [nscf](Example_06/)) and convert the data files to Yambo format (see [Example 1](#example-1)). SAVE directory will contain the following files:
 ```
 ns.db1
 ns.kb_pp_pwscf_*
@@ -548,7 +548,7 @@ Run real time dynamics to calculate linear response (calc. time 2m30s):
 
 > yambo_nl -F input_lr.in   
 
-File [o.polarization_F1](https://github.com/Dmitry-Skachkov/Yambo_examples/blob/main/Example_5/o.polarization_F1) will contain the polarization. 
+File [o.polarization_F1](Example_06/o.polarization_F1) will contain the polarization. 
    
 [Go to top](#yambo-usage)
 
