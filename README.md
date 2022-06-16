@@ -760,7 +760,7 @@ Run
 
 > ypp_nl -u   
 
-and change energy range, DampMpde and DampFactor:   
+and change energy range, DampMode and DampFactor:   
 ```
 Xorder=  4                   # Max order of the response functions
 % EnRngeRt
