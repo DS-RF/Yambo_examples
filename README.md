@@ -9,7 +9,7 @@
 * [Example 3. Self-consistent GW](#example-3)
 * [Example 4. Parallel calculation](#example-4)
 * [Example 5. Linear response with GW - BSE](#example-5)  
-* [Example 6. Linear response with IPA - TD BSE](#example-6)
+* [Example 6. Linear response with TD BSE in IPA approximation](#example-6)
 * [Example 7. Second harmonic generation with IPA - TD BSE](#example-7)
 * [Example 8. Linear response and SHG with GW - TD BSE](#example-8)   
     * [Collisions calculation](#collisions-calculation)
