@@ -4,11 +4,11 @@
     * [Automatic installation of version 5.0.4](#automatic-installation-of-version-504)
     * [Separate compilation of libraries](#separate-compilation-of-libraries)
     * [Compilation version 5.1.1](#compilation-version-511)   
-* [Example 1. Ground state calculation](#example-1)  
+* [Example 1. Convert QE ground state calculation to Yambo format](#example-1)  
 * [Example 2. GW calculation](#example-2)  
 * [Example 3. Self-consistent GW](#example-3)
 * [Example 4. Parallel calculation](#example-4)
-* [Example 5. Linear response with GW - BSE)](#example-5)  
+* [Example 5. Linear response with GW - BSE](#example-5)  
 * [Example 6. Linear response with IPA - TD BSE](#example-6)
 * [Example 7. Second harmonic generation with IPA - TD BSE](#example-7)
 * [Example 8. Linear response and SHG with GW - TD BSE](#example-8)   
@@ -581,7 +581,7 @@ Submit job on 48 cores for real-time dynamics (calc. time 40m7s):
 
 # Example 8   
 
-## Linear response with GW - time dependent BSE   
+## Linear response (LR) and secong harmonic generation (SHG) with GW - time dependent BSE   
 
 Following [Lumen web-site](http://www.attaccalite.com/lumen/real_time_bse.html)
 
