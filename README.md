@@ -553,7 +553,7 @@ File [o.polarization_F1](https://github.com/Dmitry-Skachkov/Yambo_examples/blob/
 
 This example is from Lumen web-site [SHG](http://www.attaccalite.com/lumen/shg_in_AlAs.html) and [Correlation and SHG](http://www.attaccalite.com/lumen/correlation_and_shg.html)   
 
-Do [Example 5](#example-5) **Setup calculation**, and then generate input file for second harmonic calculation:
+Do [Example 6](#example-6) **Setup calculation**, and then generate input file for second harmonic calculation:
 
 > yambo_nl -u -V par -V qp -F yambo_shg.in     
 
