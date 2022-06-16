@@ -775,7 +775,7 @@ Then run
 
 Then plot   
 
-> gnuplot plot_absX2.gnu        
+> gnuplot [plot_absX2.gnu](Example_08/plot_absX2.gnu)        
 
 The result is plot_absX2.pdf
 
