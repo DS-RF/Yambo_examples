@@ -728,7 +728,7 @@ Then run
 
 > ypp_nl   
 
-To plot eps   
+To plot &epsilon;(E)   
 
 > gnuplot [plot_eps.gnu](Example_08/plot_eps.gnu)    
 
@@ -777,7 +777,7 @@ Then run
 
 > ypp_nl   
 
-Then plot   
+Then plot &chi;<sup>(2)</sup>(E)  
 
 > gnuplot [plot_absX2.gnu](Example_08/plot_absX2.gnu)        
 
