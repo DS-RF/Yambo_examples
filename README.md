@@ -166,19 +166,19 @@ This is yambo - MPI+HDF5_MPI_IO - Ver. 5.1.1 Revision 21528 Hash 0e32e3c52
 
 In this example we follow the recommendations from [https://www.paradim.org](https://www.paradim.org/toolbox/computation/tutorials)
 
-The detailed description of the example is in the [pdf file](https://github.com/Dmitry-Skachkov/Yambo_examples/blob/main/Example_1/YAMBO_Tutorial-1_Ground_State_Calculation_as_Starting_Point_for_YAMBO.pdf)
+The detailed description of the example is in the [pdf file](https://github.com/Dmitry-Skachkov/Yambo_examples/blob/main/Example_01/YAMBO_Tutorial-1_Ground_State_Calculation_as_Starting_Point_for_YAMBO.pdf)
 
 ### QE scf calculation
 
-All input files are here [Example_1](https://github.com/Dmitry-Skachkov/Yambo_examples/tree/main/Example_1)
+All input files are here [Example_1](Example_01)
 
 To run the example (calculation time is 3s):
 
-> sbatch [job_QE](https://github.com/Dmitry-Skachkov/Yambo_examples/blob/main/Example_1/job_QE)
+> sbatch [job_QE](Example_01/job_QE)
 
 ### Converting QE files to YAMBO
 
-After the calculation it is necessary to convert QE files to Yambo format. The detailed notes about the conversion are [here](https://github.com/Dmitry-Skachkov/Yambo_examples/blob/main/Example_1/YAMBO_Tutorial-2_File_Conversion_from_QE_to_YAMBO.pdf).
+After the calculation it is necessary to convert QE files to Yambo format. The detailed notes about the conversion are [here](Example_01/YAMBO_Tutorial-2_File_Conversion_from_QE_to_YAMBO.pdf).
 
 > cd d.save  
 > p2y  
