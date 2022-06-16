@@ -305,6 +305,10 @@ Submit job:
 
 ### Manual self-consistent procedure   
 
+Submit the job    
+
+> sbatch [job_yambo_gw](Example_03/job_yambo_gw)   
+
 [Go to top](#yambo-usage)    
 
 # Example 4  
