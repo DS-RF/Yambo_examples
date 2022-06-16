@@ -752,7 +752,7 @@ Run SHG calculation:
 
 > sbatch [job_yambo_shg](Example_08/job_yambo_shg)   
 
-calculation time is 
+calculation time on 10 nodes with 48 cores is 25h. 
 
 ### Analyze resulst for SHG   
 
