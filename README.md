@@ -664,7 +664,7 @@ ndb.em1s*
 
 To generate input file for linear response:   
 
-> yambo_nl -u n -V qp -F input_lr.in    
+> yambo_nl -u n -V qp -F yambo_lr.in    
 
 and change the NLBands according to COLLBands, change verbosity to high, change the method of integration, simulation time (55 fs), energy steps (1), dampling (0.1), electric field direction, and type of electric field to DELTA:
 
