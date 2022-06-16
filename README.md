@@ -582,11 +582,11 @@ NLDamping= 0.150000    eV          # [NL] Damping
 %
 
 ```
-The modified input file [yambo_shg.in](https://github.com/Dmitry-Skachkov/Yambo_examples/blob/main/Example_6/yambo_shg.in)
+The modified input file [yambo_shg.in](Example_07/yambo_shg.in)
 
 Submit job on 48 cores for real-time dynamics (calc. time 40m7s):   
 
-> sbatch [job_yambo_nl](https://github.com/Dmitry-Skachkov/Yambo_examples/blob/main/Example_6/job_yambo_nl)   
+> sbatch [job_yambo_nl](Example_07/job_yambo_nl)   
 
 
 [Go to top](#yambo-usage)     
