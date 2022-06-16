@@ -671,7 +671,7 @@ NLogCPUs = 10                 # [PARALLEL] Live-timing CPU`s (0 for all)
 PAR_def_mode= "workload"      # [PARALLEL] Default distribution mode ("balanced"/"memory"/"workload")
 ```
 
-Submit the calculation for real time dynamics to calculate linear response (calc. time ):   
+Submit the calculation for real time dynamics to calculate linear response (calc. time 1h30m):   
 
 > sbatch job_yambo_lr  
 
