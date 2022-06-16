@@ -675,6 +675,32 @@ Submit the calculation for real time dynamics to calculate linear response (calc
 
 > sbatch job_yambo_lr  
 
+### Analyze results for LR   
+
+Run
+
+> ypp_nl -u   
+
+and change energy range, DampMpde and DampFactor:   
+```
+% EnRngeRt
+  0.00000 | 10.00000 |         eV    # Energy range
+DampMode= "LORENTZIAN"               # Damping type ( NONE | LORENTZIAN | GAUSSIAN )
+DampFactor= 0.100000       eV        # Damping parameter
+%
+```
+
+Then run   
+
+> ypp_nl   
+
+Then plot   
+
+> gnuplot plot_eps.gnu    
+
+The result is plot_eps.pdf    
+
+
 
 [Go to top](#yambo-usage)  
 
