@@ -166,11 +166,11 @@ This is yambo - MPI+HDF5_MPI_IO - Ver. 5.1.1 Revision 21528 Hash 0e32e3c52
 
 In this example we follow the recommendations from [https://www.paradim.org](https://www.paradim.org/toolbox/computation/tutorials)
 
-The detailed description of the example is in the [pdf file](https://github.com/Dmitry-Skachkov/Yambo_examples/blob/main/Example_01/YAMBO_Tutorial-1_Ground_State_Calculation_as_Starting_Point_for_YAMBO.pdf)
+The detailed description of the example is in the [pdf file](Example_01/YAMBO_Tutorial-1_Ground_State_Calculation_as_Starting_Point_for_YAMBO.pdf)
 
 ### QE scf calculation
 
-All input files are here [Example_1](Example_01)
+All input files are here [Example_01](Example_01)
 
 To run the example (calculation time is 3s):
 
@@ -200,24 +200,24 @@ This example is taken from [https://www.paradim.org](https://www.paradim.org/too
 
 In order to run this example it is necessary to run Example 1 at first and convert QE results to Yambo format. 
 
-The directory with the example [Example_2](https://github.com/Dmitry-Skachkov/Yambo_examples/tree/main/Example_2)  
+The directory with the example [Example_02](Example_02)  
 In order to create the input file for GW calculation:
 
 > yambo -x -g n -p p -F yambo_gw.in 
 
 Change the response block to 6 Ry.
 
-The detailed description of the example is [here](https://github.com/Dmitry-Skachkov/Yambo_examples/blob/main/Example_2/YAMBO_Tutorial-3.1_GW_Band_Structure.pdf)
+The detailed description of the example is [here](Example_02/YAMBO_Tutorial-3.1_GW_Band_Structure.pdf)
 
 To run the GW calculation (calculation time is 3m):
 
-> sbatch [job_yambo](https://github.com/Dmitry-Skachkov/Yambo_examples/blob/main/Example_2/job_yambo)  
+> sbatch [job_yambo](Example_02/job_yambo)  
 
-The yambo output with GW calculation is here [r_HF_and_locXC_gw0_dyson_em1d_ppa_01](https://github.com/Dmitry-Skachkov/Yambo_examples/blob/main/Example_2/r_HF_and_locXC_gw0_dyson_em1d_ppa_01)  
+The yambo output with GW calculation is here [r_HF_and_locXC_gw0_dyson_em1d_ppa_01](Example_02/r_HF_and_locXC_gw0_dyson_em1d_ppa_01)  
 
 ### Plot Band Structure 
 
-How to plot band structure [YAMBO_Tutorial-3.2_Postprocessing_of_the_quasiparticle_energies_to_obtain_the_GW_band_structure.pdf](https://github.com/Dmitry-Skachkov/Yambo_examples/blob/main/Example_2/YAMBO_Tutorial-3.2_Postprocessing_of_the_quasiparticle_energies_to_obtain_the_GW_band_structure.pdf)  
+How to plot band structure [YAMBO_Tutorial-3.2_Postprocessing_of_the_quasiparticle_energies_to_obtain_the_GW_band_structure.pdf](Example_02/YAMBO_Tutorial-3.2_Postprocessing_of_the_quasiparticle_energies_to_obtain_the_GW_band_structure.pdf)  
 
 Generate input file for post-processing program *ypp*  
 > ypp -s b 
@@ -263,9 +263,9 @@ Insert the k-points path:
 > %     
 
 
-The corrected file [ypp.in](https://github.com/Dmitry-Skachkov/Yambo_examples/blob/main/Example_2/ypp.in)  
+The corrected file [ypp.in](Example_02/ypp.in)  
 
-Run the script [yambo_band_plot.sh](Example_2/yambo_band_plot.sh):   
+Run the script [yambo_band_plot.sh](Example_02/yambo_band_plot.sh):   
 
 > yambo_band_plot.sh   
 
