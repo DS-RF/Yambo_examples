@@ -639,13 +639,18 @@ To generate input file for linear response:
 
 > yambo_nl -u n -V qp -F input_lr.in    
 
-and change the NLBands according to COLLBands, simulation time (55 fs), energy steps (1), dampling (0.1), electric field direction, and type of electric field to DELTA:
+and change the NLBands according to COLLBands, change verbosity to high, change the method of integration, simulation time (55 fs), energy steps (1), dampling (0.1), electric field direction, and type of electric field to DELTA:
 
 ```
 % NLBands
   5 | 14 |                   # [NL] Bands
 %
+NLverbosity= "high"              # [NL] Verbosity level (low | high)
 NLtime=55.000000      fs     # [NL] Simulation Time
+NLintegrator= "CRANKNIC"           # [NL] Integrator ("EULEREXP/RK2/RK4/RK2EXP/HEUN/INVINT/CRANKNIC")
+% NLEnRange
+ 0.100000 | 10.000000 |         eV    # [NL] Energy range
+%
 NLEnSteps= 1                 # [NL] Energy steps
 NLDamping= 0.000000    eV    # [NL] Damping
 % ExtF_Dir
@@ -654,7 +659,18 @@ NLDamping= 0.000000    eV    # [NL] Damping
 ExtF_kind= "DELTA"               # [NL ExtF] Kind(SIN|SOFTSIN|RES|ANTIRES|GAUSS|DELTA|QSSIN)
 ```
 
- 
+Add GW QP database:
+
+```
+GfnQPdb= "E < SAVE/ndb.QP"                  # [EXTQP G] Database action
+```
+
+And add the parameters for parallel distribution:
+```
+NLogCPUs = 10                 # [PARALLEL] Live-timing CPU`s (0 for all)
+PAR_def_mode= "workload"      # [PARALLEL] Default distribution mode ("balanced"/"memory"/"workload")
+```
+
 Submit the calculation for real time dynamics to calculate linear response (calc. time ):   
 
 > sbatch job_yambo_lr  
