@@ -701,6 +701,52 @@ Then plot
 The result is plot_eps.pdf    
 
 
+### SHG with GW-TD BSE   
+
+Copy yambo_lr.in file:   
+
+> cp yambo_lr.in yambo_shg.in   
+
+and change it:   
+
+```
+NLtime=-1.000000           fs    # [NL] Simulation Time
+NLEnSteps= 200                     # [NL] Energy steps
+NLDamping= 0.1500000        eV    # [NL] Damping (or dephasing)
+Field1_kind= "SOFTSIN"           # [RT Field1] Kind(SIN|RES|ANTIRES|GAUSS|DELTA|QSSIN)
+```
+
+Run SHG calculation:
+
+> sbatch job_yambo_shg   
+
+calculation time is 
+
+### Analyze resulst for SHG   
+
+un
+
+> ypp_nl -u   
+
+and change energy range, DampMpde and DampFactor:   
+```
+Xorder=  4                   # Max order of the response functions
+% EnRngeRt
+  0.00000 | 10.00000 |         eV    # Energy range
+DampMode= "NONE"             # Damping type ( NONE | LORENTZIAN | GAUSSIAN )
+DampFactor=  0.10000   eV    # Damping parameter%
+```
+
+Then run   
+
+> ypp_nl   
+
+Then plot   
+
+> gnuplot plot_absX2   
+
+The result is plot_absX2.pdf
+
 
 [Go to top](#yambo-usage)  
 
