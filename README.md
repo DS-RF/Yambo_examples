@@ -648,7 +648,7 @@ Calculation time is 1h for "workload" and 1h40m for "balanced" parallel distribu
 PAR_def_mode= "workload"      # [PARALLEL] Default distribution mode ("balanced"/"memory"/"workload")
 ```
 
-After the calculation the folder SAVe will contain:
+After the calculation the folder SAVE will contain:
 
 ```
 ndb.COLLISIONS*
