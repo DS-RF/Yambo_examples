@@ -1,0 +1,68 @@
+#!/bin/bash
+#SBATCH --job-name=hBN_GW
+#SBATCH --time=10:00:00
+#SBATCH --nodes=8 
+#SBATCH --ntasks-per-node=48
+#SBATCH --cpus-per-task=1
+#SBATCH --mem=384000
+#SBATCH --account=ACCOUNT
+#SBATCH --mail-user=EMAIL@gmail.com
+#SBATCH --mail-type=END
+#SBATCH --error=error.txt
+#SBATCH --output=output.txt
+
+export OMP_NUM_THREADS=$SLURM_CPUS_PER_TASK
+export MV2_ENABLE_AFFINITY=0 
+export I_MPI_PIN_DOMAIN=auto 
+export I_MPI_PIN_ORDER=bunch 
+export KMP_AFFINITY=compact,granularity=fine,1
+ 
+module load espresso
+
+PPN=$(( $SLURM_NTASKS_PER_NODE * $SLURM_JOB_NUM_NODES ))
+echo "number of MPI processes   = $PPN"
+echo "number of OpenMP threads  = $OMP_NUM_THREADS"
+
+
+### Yambo G0W0
+mpirun   -np $PPN  yambo -F yambo_gw.in 
+
+
+# G1W1
+mv SAVE SAVE_G0W0
+mkdir SAVE
+cp SAVE_G0W0/ns.* SAVE/
+yambo
+
+sed 's%XfnQPdb= "none"%XfnQPdb= "E < SAVE_G0W0/ndb.QP"%;s%GfnQPdb= "none"%GfnQPdb= "E < SAVE_G0W0/ndb.QP"%' yambo_gw.in > yambo_g1w1.in
+
+mpirun   -np $PPN  yambo -F yambo_g1w1.in 
+
+
+# G2W2
+mv SAVE SAVE_G1W1
+mkdir SAVE
+cp SAVE_G1W1/ns.* SAVE/
+yambo
+
+sed 's%XfnQPdb= "E < SAVE_G0W0/ndb.QP"%XfnQPdb= "E < SAVE_G1W1/ndb.QP"%;s%GfnQPdb= "E < SAVE_G0W0/ndb.QP"%GfnQPdb= "E < SAVE_G1W1/ndb.QP"%' yambo_g1w1.in > yambo_g2w2.in
+
+mpirun   -np $PPN  yambo -F yambo_g2w2.in 
+
+
+# G3W3
+mv SAVE SAVE_G2W2
+mkdir SAVE
+cp SAVE_G2W2/ns.* SAVE/
+yambo
+
+sed 's%XfnQPdb= "E < SAVE_G1W1/ndb.QP"%XfnQPdb= "E < SAVE_G2W2/ndb.QP"%;s%GfnQPdb= "E < SAVE_G1W1/ndb.QP"%GfnQPdb= "E < SAVE_G2W2/ndb.QP"%' yambo_g2w2.in > yambo_g3w3.in
+
+mpirun   -np $PPN  yambo -F yambo_g3w3.in 
+
+
+ 
+
+
+
+
