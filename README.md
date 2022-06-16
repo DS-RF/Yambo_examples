@@ -6,13 +6,13 @@
     * [Compilation version 5.1.1](#compilation-version-511)   
 * [Example 1. Ground state calculation](#example-1)  
 * [Example 2. GW calculation](#example-2)  
-* [Example 8. Self-consistent GW](#example-8)
+* [Example 3. Self-consistent GW](#example-3)
 * [Example 4. Parallel calculation](#example-4)
-* [Example 3. Linear response with GW - BSE)](#example-3)  
-* [Example 5. Linear response with IPA - TD BSE](#example-5)
-* [Example 6. Second harmonic generation with IPA - TD BSE](#example-6)
-* [Example 7. Linear response with GW - TD BSE](#example-7)   
-* [Example 9. SHG with GW - TD BSE](#example-7)   
+* [Example 5. Linear response with GW - BSE)](#example-5)  
+* [Example 6. Linear response with IPA - TD BSE](#example-6)
+* [Example 7. Second harmonic generation with IPA - TD BSE](#example-7)
+* [Example 8. Linear response and SHG with GW - TD BSE](#example-8)   
+
 
 
 # Yambo installation on [Stokes Supercluster of UCF](https://arcc.ist.ucf.edu)   
@@ -269,7 +269,7 @@ The band structure will be in the file bands_pl_yambo.dat.
 [Go to top](#yambo-usage)   
 
 
-# Example 8
+# Example 3
 
 ## Self-consistent GW
 
@@ -399,7 +399,7 @@ Please note, that in order to use hybrid OpenMP/MPI calculation you need to have
 
 [Go to top](#yambo-usage)
 
-# Example 3
+# Example 5
 
 ## Calculation of Optical Properties with YAMBO
 
@@ -430,7 +430,7 @@ The results of GW-BSE calculation is in the file [r_optics_dipoles_bss_bse_em1d_
 
 
 
-# Example 5  
+# Example 6  
 
 ## Linear responce 
 
@@ -539,7 +539,7 @@ File [o.polarization_F1](https://github.com/Dmitry-Skachkov/Yambo_examples/blob/
    
 [Go to top](#yambo-usage)
 
-# Example 6  
+# Example 7  
 
 ## Second harmonic generation (SHG) 
 
@@ -579,7 +579,7 @@ Submit job on 48 cores for real-time dynamics (calc. time 40m7s):
 [Go to top](#yambo-usage)     
 
 
-# Example 7   
+# Example 8   
 
 ## Linear response with GW - time dependent BSE   
 
