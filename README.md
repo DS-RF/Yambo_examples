@@ -682,7 +682,7 @@ PAR_def_mode= "workload"      # [PARALLEL] Default distribution mode ("balanced"
 
 Submit the calculation for real time dynamics to calculate linear response (calc. time 1h30m):   
 
-> sbatch job_yambo_lr  
+> sbatch [job_yambo_lr](Example_08/job_yambo_lr)  
 
 Yambo_nl does not allow to calculate on more nodes because of nothing to parallelize.    
 
