@@ -340,13 +340,13 @@ Here are the test results for calculation time running QE on 2 nodes with 48 cor
  1    2    1    1    2    1m19s
  1    2    2    1    2    1m15s      <-- optimized
 ```
-The optimized running job script for 2 nodes is [job_QE_2x48](https://github.com/Dmitry-Skachkov/Yambo_examples/blob/main/Example_4/job_QE_2x48)    
+The optimized running job script for 2 nodes is [job_QE_2x48](Example_04/job_QE_2x48)    
 Please note that optimized parameters depend on particular compiled version of QE (including scalapack or not) and particular system. Please also note, that for nscf calculation the optimized parameters will be different than for scf.    
 For larger number of nodes, probably, the optimized parameters for parallelization will involve hybrid MPI/OpenMP scheme.
 
 ### Yambo GW on 10 nodes
 
-Yambo code has several levels of paralelization. The parameters for paralelization can be placed in input file [yambo.in](https://github.com/Dmitry-Skachkov/Yambo_examples/blob/main/Example_4/yambo1.in). In order to generate parameters for paralelization you should use option *-V par*:
+Yambo code has several levels of paralelization. The parameters for paralelization can be placed in input file [yambo.in](Example_04/yambo1.in). In order to generate parameters for paralelization you should use option *-V par*:
 
 > yambo -x -g n -p p -V par   
 
@@ -404,9 +404,9 @@ Here are few examples of running Yambo on 10 nodes with 48 cores:
   6   4  20   2  10  24      1              2h10m     <-- optimized
   6   4  20   4  10  12      1              3h47m
 ```   
-The job running script for 1 OpenMP thread [job_yambo_10x48_1](https://github.com/Dmitry-Skachkov/Yambo_examples/blob/main/Example_4/job_yambo_10x48_1)   
-The job running script for 2 OpenMP threads [job_yambo_10x48_2](https://github.com/Dmitry-Skachkov/Yambo_examples/blob/main/Example_4/job_yambo_10x48_2)   
-The job running script for 4 OpenMP threads [job_yambo_10x48_4](https://github.com/Dmitry-Skachkov/Yambo_examples/blob/main/Example_4/job_yambo_10x48_4)   
+The job running script for 1 OpenMP thread [job_yambo_10x48_1](Example_04/job_yambo_10x48_1)   
+The job running script for 2 OpenMP threads [job_yambo_10x48_2](Example_04/job_yambo_10x48_2)   
+The job running script for 4 OpenMP threads [job_yambo_10x48_4](Example_04/job_yambo_10x48_4)   
 
 Please note, that in order to use hybrid OpenMP/MPI calculation you need to have hybrid OpenMP/MPI compiled version of Yambo, and in order to use parallel calculation for linear algebra (X_nCPU_LinAlg_INV=480) you need to compile Yambo with [ScaLapack library](http://www.netlib.org/scalapack/). 
 
