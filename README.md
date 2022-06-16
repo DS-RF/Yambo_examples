@@ -636,8 +636,11 @@ XfnQPdb= "E < SAVE/ndb.QP"
 Change response block:
 
 ```
-NGsBlkXs= 10 Ry
-```
+NGsBlkXs= 10 Ry    
+```    
+
+For recommended converged parameters see [here](http://www.yambo-code.org/wiki/index.php?title=GW_hBN_Yambo_Virtual_2021_version)
+
 Correct electric field direction.   
 
 Submit the job for calculation:    
