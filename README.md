@@ -709,7 +709,7 @@ Then run
 
 > ypp_nl   
 
-Then plot   
+To plot eps   
 
 > gnuplot plot_eps.gnu    
 
@@ -739,7 +739,7 @@ calculation time is
 
 ### Analyze resulst for SHG   
 
-un
+Run
 
 > ypp_nl -u   
 
@@ -758,7 +758,7 @@ Then run
 
 Then plot   
 
-> gnuplot plot_absX2   
+> gnuplot plot_absX2.gnu        
 
 The result is plot_absX2.pdf
 
