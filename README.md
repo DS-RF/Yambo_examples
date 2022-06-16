@@ -17,7 +17,7 @@
     * [Setup NL calculation](#setup-nl-calculation)
     * [Collisions calculation](#collisions-calculation)
     * [Linear response](#linear-response)
-    * [Analyze results for LR: plot eps(E)](#analyze-results-for-lr)
+    * [Analyze results for LR: plot &epsilon(E)](#analyze-results-for-lr)
     * [SHG with GW-TD BSE](#shg-with-gw-td-bse)
     * [Analyze results for SHG: plot X<sup>(2)</sup>(E)](#analyze-resulst-for-shg) 
 
