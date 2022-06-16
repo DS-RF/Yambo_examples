@@ -650,11 +650,12 @@ and change the NLBands according to COLLBands, change verbosity to high, change 
 % NLBands
   5 | 14 |                   # [NL] Bands
 %
-NLverbosity= "high"              # [NL] Verbosity level (low | high)
+NLverbosity= "high"          # [NL] Verbosity level (low | high)
 NLtime=55.000000      fs     # [NL] Simulation Time
-NLintegrator= "CRANKNIC"           # [NL] Integrator ("EULEREXP/RK2/RK4/RK2EXP/HEUN/INVINT/CRANKNIC")
+NLintegrator= "CRANKNIC"     # [NL] Integrator ("EULEREXP/RK2/RK4/RK2EXP/HEUN/INVINT/CRANKNIC")
+NLCorrelation= "SEX"         # [NL] Correlation ("IPA/HARTREE/TDDFT/LRC/LRW/JGM/SEX")
 % NLEnRange
- 0.100000 | 10.000000 |         eV    # [NL] Energy range
+ 0.100000 | 10.000000 | eV   # [NL] Energy range
 %
 NLEnSteps= 1                 # [NL] Energy steps
 NLDamping= 0.000000    eV    # [NL] Damping
@@ -667,7 +668,7 @@ ExtF_kind= "DELTA"               # [NL ExtF] Kind(SIN|SOFTSIN|RES|ANTIRES|GAUSS|
 Add GW QP database:
 
 ```
-GfnQPdb= "E < SAVE/ndb.QP"                  # [EXTQP G] Database action
+GfnQPdb= "E < SAVE/ndb.QP"       # [EXTQP G] Database action
 ```
 
 And add the parameters for parallel distribution:
