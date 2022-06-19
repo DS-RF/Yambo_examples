@@ -196,13 +196,14 @@ To check the conversion:
 
 ## GW Band Structure with YAMBO
 
-### Run GW
-
 This example is taken from [https://www.paradim.org](https://www.paradim.org/toolbox/computation/tutorials)   
 
 In order to run this example it is necessary to run [Example 1](#example-1) at first and convert QE results to Yambo format. 
 
 The directory with the example [Example_02](Example_02)  
+
+### Run GW
+
 In order to create the input file for GW calculation:
 
 > yambo -x -g n -p p -F yambo_gw.in 
