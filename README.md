@@ -320,8 +320,6 @@ Submit the job
 
 ## YAMBO parallel calculation on several nodes
 
-### Yambo GW on 10 nodes
-
 Yambo code has several levels of paralelization. The parameters for paralelization can be placed in input file [yambo.in](Example_04/yambo1.in). In order to generate parameters for paralelization you should use option *-V par*:
 
 > yambo -x -g n -p p -V par   
