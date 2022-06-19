@@ -200,7 +200,7 @@ This example is taken from [https://www.paradim.org](https://www.paradim.org/too
 
 In order to run this example it is necessary to run [Example 1](#example-1) at first and convert QE results to Yambo format. 
 
-The directory with the example [Example_02](Example_02)  
+The directory with input files for this example is [Example_02](Example_02)  
 
 ### Run GW
 
