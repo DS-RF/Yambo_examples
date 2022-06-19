@@ -194,7 +194,7 @@ To check the conversion:
 
 # Example 2
 
-## GW Band Structure with YAMBO
+## GW calculation with YAMBO
 
 This example is taken from [https://www.paradim.org](https://www.paradim.org/toolbox/computation/tutorials)   
 
