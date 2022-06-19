@@ -224,7 +224,7 @@ Yambo output with GW calculation is here [r_HF_and_locXC_gw0_dyson_em1d_ppa_01](
 
 ### Plot Band Structure 
 
-How to plot band structure [YAMBO_Tutorial-3.2_Postprocessing_of_the_quasiparticle_energies_to_obtain_the_GW_band_structure.pdf](Example_02/YAMBO_Tutorial-3.2_Postprocessing_of_the_quasiparticle_energies_to_obtain_the_GW_band_structure.pdf)  
+How to plot band structure [detailed description in pdf file](Example_02/YAMBO_Tutorial-3.2_Postprocessing_of_the_quasiparticle_energies_to_obtain_the_GW_band_structure.pdf)  
 
 Generate input file for post-processing calculation        
 > ypp -s b 
