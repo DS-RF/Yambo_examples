@@ -204,11 +204,15 @@ The directory with input files for this example is [Example_02](Example_02)
 
 ### Run GW
 
-In order to create the input file for GW calculation:
+Create input file for GW calculation:
 
 > yambo -x -g n -p p -F yambo_gw.in 
 
-Change the response block to 6 Ry.
+and change the response block to 6 Ry:
+
+```
+
+```
 
 The detailed description of the example is [here](Example_02/YAMBO_Tutorial-3.1_GW_Band_Structure.pdf)
 
