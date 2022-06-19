@@ -208,10 +208,10 @@ Create input file for GW calculation:
 
 > yambo -x -g n -p p -F yambo_gw.in 
 
-and change the response block to 6 Ry:
+and change the response block to 6-10 Ry:
 
 ```
-
+NGsBlkXp= 6                Ry    # [Xp] Response block size
 ```
 
 The detailed description of the example is [here](Example_02/YAMBO_Tutorial-3.1_GW_Band_Structure.pdf)
