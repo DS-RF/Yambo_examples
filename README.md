@@ -258,7 +258,7 @@ add QP database from GW calculation:
 
 > GfnQPdb= "E < SAVE/ndb.QP"                  # [EXTQP G] Database action
 
-and insert the k-points path (in order to generate the correct k-point pathway corresponding to the initial axes you need to run bands.x program):   
+and insert the k-points path (in order to generate the correct k-point pathway corresponding to the initial axes you need to run bands.x program from QE package):   
 
 > %BANDS_kpts                      # K points of the bands circuit     
 > 0.00000 |0.000000 |0.00000 |     
