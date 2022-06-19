@@ -216,24 +216,24 @@ NGsBlkXp= 6                Ry    # [Xp] Response block size
 
 The detailed description of the example is [here](Example_02/YAMBO_Tutorial-3.1_GW_Band_Structure.pdf)
 
-To run the GW calculation (calculation time is 3m):
+To run GW calculation (calculation time is 3m):
 
 > sbatch [job_yambo](Example_02/job_yambo)  
 
-The yambo output with GW calculation is here [r_HF_and_locXC_gw0_dyson_em1d_ppa_01](Example_02/r_HF_and_locXC_gw0_dyson_em1d_ppa_01)  
+Yambo output with GW calculation is here [r_HF_and_locXC_gw0_dyson_em1d_ppa_01](Example_02/r_HF_and_locXC_gw0_dyson_em1d_ppa_01)  
 
 ### Plot Band Structure 
 
 How to plot band structure [YAMBO_Tutorial-3.2_Postprocessing_of_the_quasiparticle_energies_to_obtain_the_GW_band_structure.pdf](Example_02/YAMBO_Tutorial-3.2_Postprocessing_of_the_quasiparticle_energies_to_obtain_the_GW_band_structure.pdf)  
 
-Generate input file for post-processing program *ypp*  
+Generate input file for post-processing calculation        
 > ypp -s b 
 
-Remove symmetry (the directory FixSymm will be created):
+Remove symmetry:
 
 > ypp -y  
 
-Correct input file by uncomment **RmTimeRev**.
+Correct input file by uncomment **RmTimeRev** and insert the direction of the field.
 
 > ypp  
 > cd FixSymm  
@@ -246,7 +246,7 @@ Change interpolation to BOLTZ in order to have smooth band curves:
 
 > INTERP_mode= "BOLTZ"                # Interpolation mode (NN=nearest point, BOLTZ=boltztrap aproach)
 
-Select 10 bands for plotting:    
+Select 99 bands for plotting:    
 
 > % BANDS_bands     
 >    1 |  99 |                         # Number of bands     
@@ -256,11 +256,11 @@ Change number of divisions for plotting:
 
 > BANDS_steps= 20                  # Number of divisions     
 
-Add QP database: 
+Add QP database from GW calculation: 
 
 > GfnQPdb= "E < SAVE/ndb.QP"                  # [EXTQP G] Database action
 
-Insert the k-points path:   
+Insert the k-points path (in order to generate the correct k-point pathway corresponding to the initial axes you need to run bands.x program):   
 
 > %BANDS_kpts                      # K points of the bands circuit     
 > 0.00000 |0.000000 |0.00000 |     
