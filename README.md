@@ -240,27 +240,25 @@ Correct input file by uncomment **RmTimeRev** and insert the direction of the fi
 > yambo  
 > ypp -s b -V qp    
 
-The last command creates the file ypp.in, which is necessary to correct.   
-
-Change interpolation to BOLTZ in order to have smooth band curves:   
+The last command creates the file ypp.in, which is necessary to correct, change interpolation to BOLTZ in order to have smooth band curves:   
 
 > INTERP_mode= "BOLTZ"                # Interpolation mode (NN=nearest point, BOLTZ=boltztrap aproach)
 
-Select 99 bands for plotting:    
+select 99 bands for plotting:    
 
 > % BANDS_bands     
 >    1 |  99 |                         # Number of bands     
 >
 
-Change number of divisions for plotting:     
+change number of divisions for plotting:     
 
 > BANDS_steps= 20                  # Number of divisions     
 
-Add QP database from GW calculation: 
+add QP database from GW calculation: 
 
 > GfnQPdb= "E < SAVE/ndb.QP"                  # [EXTQP G] Database action
 
-Insert the k-points path (in order to generate the correct k-point pathway corresponding to the initial axes you need to run bands.x program):   
+and insert the k-points path (in order to generate the correct k-point pathway corresponding to the initial axes you need to run bands.x program):   
 
 > %BANDS_kpts                      # K points of the bands circuit     
 > 0.00000 |0.000000 |0.00000 |     
