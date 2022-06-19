@@ -182,7 +182,7 @@ For optimized parameters for QE calculation see [QE examples](https://github.com
 
 ### Converting QE files to YAMBO
 
-After the calculation it is necessary to convert QE files to Yambo format. The detailed notes about the conversion are [here](Example_01/YAMBO_Tutorial-2_File_Conversion_from_QE_to_YAMBO.pdf).
+After the QE calculation it is necessary to convert QE files to Yambo format. The detailed notes about the conversion are [here](Example_01/YAMBO_Tutorial-2_File_Conversion_from_QE_to_YAMBO.pdf).
 
 > cd d.save  
 > p2y  
