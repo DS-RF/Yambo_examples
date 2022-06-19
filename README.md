@@ -176,7 +176,9 @@ All input files are here [Example_01](Example_01)
 
 To run the example (calculation time is 3s):
 
-> sbatch [job_QE](Example_01/job_QE)
+> sbatch [job_QE](Example_01/job_QE)     
+
+For optimized parameters for QE calculation see [QE examples](https://github.com/Dmitry-Skachkov/QE_examples)     
 
 ### Converting QE files to YAMBO
 
