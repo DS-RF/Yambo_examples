@@ -744,7 +744,7 @@ and change energy range, DampMode and DampFactor:
 ```
 Xorder=  4                   # Max order of the response functions
 % EnRngeRt
-  0.00000 | 10.00000 |         eV    # Energy range
+  0.00000 | 10.00000 | eV    # Energy range
 DampMode= "NONE"             # Damping type ( NONE | LORENTZIAN | GAUSSIAN )
 DampFactor=  0.10000   eV    # Damping parameter%
 ```
