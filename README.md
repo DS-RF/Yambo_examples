@@ -259,7 +259,7 @@ add QP database from GW calculation:
 
 > GfnQPdb= "E < SAVE/ndb.QP"                  # [EXTQP G] Database action
 
-and insert the k-points path (in order to generate the correct k-point pathway corresponding to the initial axes see [Calculate band structure using QE](https://github.com/Dmitry-Skachkov/QE_examples#band-structure-calculation-in-qe)):   
+and insert the k-points path:   
 
 > %BANDS_kpts                      # K points of the bands circuit     
 > 0.00000 |0.000000 |0.00000 |     
@@ -268,6 +268,8 @@ and insert the k-points path (in order to generate the correct k-point pathway c
 > 0.00000 |0.000000 |0.00000 |     
 > %     
 
+In order to generate the correct k-point pathway corresponding to the initial axes see [Calculate band structure using QE](https://github.com/Dmitry-Skachkov/QE_examples#band-structure-calculation-in-qe)    
+*Tip*. You can run 'bands' calculation of QE with only one intermediate point between the points in order to generate necessary k-points list for Yambo input (use cryst. coord. representation).
 
 The corrected file [ypp.in](Example_02/ypp.in)  
 
