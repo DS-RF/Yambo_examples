@@ -397,7 +397,7 @@ The detailed description of the example [YAMBO_Tutorial-4_Calculation_of_Optical
 
 This example is taken from [https://www.paradim.org](https://www.paradim.org/toolbox/computation/tutorials)  
 
-In order to run this example it is necessary to run Example 1 at first and convert QE results to Yambo format. 
+In order to run this example it is necessary to run [Example 1](#converting-qe-files-to-yambo) at first and convert QE results to Yambo format. 
 
 To generate the input file for the GW-BSE calculation:
 
