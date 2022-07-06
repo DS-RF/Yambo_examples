@@ -187,9 +187,23 @@ After the QE calculation it is necessary to convert QE files to Yambo format. Th
 > cd d.save  
 > p2y  
 
-The program *p2y* creates directory SAVE with converted files. After that it is necessary to run Yambo initialization:    
+The program *p2y* creates directory SAVE with converted files:
+```
+ns.db1
+ns.kb_pp_*
+ns.wf_*
+```
+
+After that it is necessary to run Yambo initialization:    
 
 > yambo  
+
+After that new files will be in SAVER directory:
+```
+ndb.gops
+ndb.kindx
+```
+
 
 [Go to top](#yambo-usage)
 
@@ -222,6 +236,12 @@ To run GW calculation (calculation time is 3m):
 > sbatch [job_yambo](Example_02/job_yambo)  
 
 Yambo output with GW calculation is here [r_HF_and_locXC_gw0_dyson_em1d_ppa_01](Example_02/r_HF_and_locXC_gw0_dyson_em1d_ppa_01)  
+ 
+After the calculation SAVE directory will contain the files:
+```
+ndb.em1s*
+ndb.QP
+```
 
 ### Plot Band Structure 
 
