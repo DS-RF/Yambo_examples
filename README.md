@@ -411,7 +411,7 @@ The corrected file [yambo_lr.in](Example_05/yambo_lr.in)
 
 To run the GW-BSE calculation (calculation time is 16m):
 
-> sbatch [job_yambo](Example_05/job_yambo)  
+> sbatch [job_yambo_lr](Example_05/job_yambo_lr)  
 
 The results of GW-BSE calculation is in the file [r_optics_dipoles_bss_bse_em1d_ppa](Example_05/r_optics_dipoles_bss_bse_em1d_ppa) with the results in file [o.eps_q1_haydock_bse](Example_05/o.eps_q1_haydock_bse), EPS-Im versus E.   
 
