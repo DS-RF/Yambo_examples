@@ -401,14 +401,13 @@ In order to run this example it is necessary to run Example 1 at first and conve
 
 To generate the input file for the GW-BSE calculation:
 
-> yambo -o b -k sex -y h  
-> mv yambo.in yambo2.in  
+> yambo -o b -k sex -y h -F yambo_lr.in 
 
-To correct *yambo2.in* file to insert QP correction:
+To correct *yambo_lr.in* file to insert GW QP correction:
 
 > KfnQPdb= "E < SAVE/ndb.QP" # [EXTQP BSK BSS] Database 
 
-The corrected file [yambo2.in](Example_05/yambo2.in)  
+The corrected file [yambo_lr.in](Example_05/yambo_lr.in)  
 
 To run the GW-BSE calculation (calculation time is 16m):
 
