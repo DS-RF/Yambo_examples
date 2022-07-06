@@ -424,8 +424,9 @@ To generate the input file for the GW-BSE calculation:
 > yambo -o b -k sex -y h -V qp -F yambo_lr.in 
 
 To correct *yambo_lr.in* file to insert GW QP correction:
-
-> KfnQPdb= "E < SAVE/ndb.QP" # [EXTQP BSK BSS] Database    
+```
+KfnQPdb= "E < SAVE/ndb.QP" # [EXTQP BSK BSS] Database    
+```
 
 And insert commands for parallel calculation:
 ```
