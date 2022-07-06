@@ -3,7 +3,7 @@
 #SBATCH --nodes=1 
 #SBATCH --ntasks-per-node=48
 #SBATCH --job-name=test_yambo
-#SBATCH --mail-type=END
+#SBATCH --mail-type=END,FAIL
 #SBATCH --account=<account name>
 #SBATCH --mail-user=<email@gmail.com>
 #SBATCH --error=error.txt
@@ -21,7 +21,7 @@ PPN=$(( $SLURM_TASKS_PER_NODE / $OMP_NUM_THREADS ))
 echo "PPN = $PPN"
 
 ### Yambo
-mpirun   -np $PPN  yambo -F yambo2.in
+mpirun   -np $PPN  yambo -F yambo_lr.in
  
 
 
