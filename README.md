@@ -429,8 +429,8 @@ To correct *yambo_lr.in* file to insert GW QP correction:
 
 And insert commands for parallel calculation:
 ```
-
-
+NLogCPUs = 10                 # [PARALLEL] Live-timing CPU`s (0 for all)
+PAR_def_mode= "workload"      # [PARALLEL] Default distribution mode ("balanced"/"memory"/"workload")
 ```
 
 The corrected file [yambo_lr.in](Example_05/yambo_lr.in)  
