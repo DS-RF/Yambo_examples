@@ -262,31 +262,35 @@ Correct input file by uncomment **RmTimeRev** and insert the direction of the fi
 > ypp -s b -V qp    
 
 The last command creates the file ypp.in, which is necessary to correct, change interpolation to BOLTZ in order to have smooth band curves:   
-
-> INTERP_mode= "BOLTZ"                # Interpolation mode (NN=nearest point, BOLTZ=boltztrap aproach)
+```
+INTERP_mode= "BOLTZ"                # Interpolation mode (NN=nearest point, BOLTZ=boltztrap aproach)
+```
 
 select 99 bands for plotting:    
-
-> % BANDS_bands     
->    1 |  99 |                         # Number of bands     
->
+```
+% BANDS_bands     
+   1 |  99 |                         # Number of bands     
+```
 
 change number of divisions for plotting:     
-
-> BANDS_steps= 20                  # Number of divisions     
+```
+BANDS_steps= 20                  # Number of divisions     
+```
 
 add QP database from GW calculation: 
-
-> GfnQPdb= "E < SAVE/ndb.QP"                  # [EXTQP G] Database action
+```
+GfnQPdb= "E < SAVE/ndb.QP"                  # [EXTQP G] Database action
+```
 
 and insert the k-points path:   
-
-> %BANDS_kpts                      # K points of the bands circuit     
-> 0.00000 |0.000000 |0.00000 |     
-> 0.66666 |-0.33333 |0.00000 |     
-> 0.50000 |0.000000 |0.00000 |     
-> 0.00000 |0.000000 |0.00000 |     
-> %     
+```
+%BANDS_kpts                      # K points of the bands circuit     
+0.00000 |0.000000 |0.00000 |     
+0.66666 |-0.33333 |0.00000 |     
+0.50000 |0.000000 |0.00000 |     
+0.00000 |0.000000 |0.00000 |     
+%     
+```
 
 In order to generate the correct k-point pathway corresponding to the initial axes see [Calculate band structure using QE](https://github.com/Dmitry-Skachkov/QE_examples#band-structure-calculation-in-qe)    
 *Tip*. You can run 'bands' calculation of QE with only one intermediate point between the points in order to generate necessary k-points list for Yambo input (use cryst. coord. representation).
