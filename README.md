@@ -421,7 +421,7 @@ In order to run this example it is necessary to run [Example 1](#converting-qe-f
 
 To generate the input file for the GW-BSE calculation:
 
-> yambo -o b -k sex -y h -F yambo_lr.in 
+> yambo -o b -k sex -y h -V qp -F yambo_lr.in 
 
 To correct *yambo_lr.in* file to insert GW QP correction:
 
