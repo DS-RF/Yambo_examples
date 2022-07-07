@@ -233,7 +233,7 @@ The detailed description of the example is [here](Example_02/YAMBO_Tutorial-3.1_
 
 To run GW calculation (calculation time is 3m):
 
-> sbatch [job_yambo](Example_02/job_yambo)  
+> sbatch [job_yambo_gw](Example_02/job_yambo_gw)  
 
 Yambo output with GW calculation is here [r_HF_and_locXC_gw0_dyson_em1d_ppa_01](Example_02/r_HF_and_locXC_gw0_dyson_em1d_ppa_01)  
  
