@@ -261,7 +261,7 @@ Correct input file by uncomment **RmTimeRev** and insert the direction of the fi
 > yambo  
 > ypp -s b -V qp -F ypp_GW.in    
 
-The last command creates the file ypp.in, which is necessary to correct, change interpolation to BOLTZ in order to have smooth band curves:   
+The last command creates the file ypp_GW.in, which is necessary to correct, change interpolation to BOLTZ in order to have smooth band curves:   
 ```
 INTERP_mode= "BOLTZ"                # Interpolation mode (NN=nearest point, BOLTZ=boltztrap aproach)
 ```
@@ -292,7 +292,7 @@ and insert the k-points path:
 %     
 ```
 
-Or use automatic k-pathway generation:
+or use automatic k-pathway generation:
 ```
 BANDS_path= "G K M G A H L A"                   # High-Symmetry points labels (G,M,K,L...) also using composed positions (0.5xY+0.5xL).
 ```
