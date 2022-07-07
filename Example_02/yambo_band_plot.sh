@@ -1,24 +1,36 @@
 #!/bin/bash
 
-rm o.bands_inter*
+rm o.bands_inter*  
 
-# plot bands 1-10
-sed -i "s/ 1 |  99 |/ 1 |  10 |/" ypp.in
-ypp
-mv o.bands_interpolated 1
+NBND=$(( $2 - $1 + 1 ))                          # total number of bands for plotting
+echo "NBND=$NBND"
+NBS=$(( $NBND/10 ))                              # number of files
+echo "NBS=$NBS"
 
-# plot bands 11-20
-sed -i "s/ 1 |  10 |/ 11 |  20 |/" ypp.in
-ypp
-mv o.bands_interpolated 2
+if [ $(( NBND%10 )) != 0 ]; then 
+ NBS=$(( $NBS + 1 ))  
+fi
+echo "NBS=$NBS"
 
-# plot bands 21-30
-sed -i "s/ 11 |  20 |/ 21 |  30 |/" ypp.in
-ypp
-mv o.bands_interpolated 3
+for ((i=1;i<=$NBS;i++)); do  
 
-# combine files 1, 2, 3 into bands_pl_yambo.dat
-yambo_band_plot
+# read bands by 10
+echo $i
+I1=$(( $1 + ($i-1)*10 ))
+I2=$(( $1 + ($i-1)*10 + 9 ))
+sed "s/ 1 |  99 |/ $I1 |  $I2 |/" $3 > ypp.in
+ypp 
+mv o.bands_interpolated $i
 
-sed -i "s/ 21 |  30 |/ 1 |  99 |/" ypp.in
+done
+
+
+# combine files into bands_pl_yambo.dat
+yambo_band_plot $1 $2 $3
+
+
+
+
+## Example of usage:
+## yambo_band_plot.sh 5 25 ypp_GW.in     - plot bands from 5 to 25 using ypp_GW.in input file   
 
