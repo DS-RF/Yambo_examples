@@ -259,7 +259,7 @@ Correct input file by uncomment **RmTimeRev** and insert the direction of the fi
 > ypp  
 > cd FixSymm  
 > yambo  
-> ypp -s b -V qp    
+> ypp -s b -V qp -F ypp_GW.in    
 
 The last command creates the file ypp.in, which is necessary to correct, change interpolation to BOLTZ in order to have smooth band curves:   
 ```
@@ -300,11 +300,13 @@ BANDS_path= "G K M G A H L A"                   # High-Symmetry points labels (G
 In order to generate the correct k-point pathway corresponding to the initial axes see [Calculate band structure using QE](https://github.com/Dmitry-Skachkov/QE_examples#band-structure-calculation-in-qe)    
 *Tip*. You can run 'bands' calculation of QE with only one intermediate point between the points in order to generate necessary k-points list for Yambo input (use cryst. coord. representation).
 
-The corrected file [ypp.in](Example_02/ypp.in)  
+The corrected file [ypp_GW.in](Example_02/ypp_GW.in)  
 
-Run the script [yambo_band_plot.sh](Example_02/yambo_band_plot.sh):   
+Run script [yambo_band_plot.sh](Example_02/yambo_band_plot.sh) in order to plot bands from 1 to 50:   
 
-> yambo_band_plot.sh   
+> yambo_band_plot.sh 1 50 ypp_GW.in    
+
+
 
 The band structure will be in the file bands_pl_yambo.dat.
 
