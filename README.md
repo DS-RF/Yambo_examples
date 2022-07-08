@@ -198,7 +198,7 @@ After that it is necessary to run Yambo initialization:
 
 > yambo  
 
-After that new files will be in SAVER directory:
+After that new files will be in SAVE directory:
 ```
 ndb.gops
 ndb.kindx
