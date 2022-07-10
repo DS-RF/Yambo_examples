@@ -619,7 +619,8 @@ Following [Lumen web-site](http://www.attaccalite.com/lumen/real_time_bse.html)
 > yambo_nl -F setup.in                        
 > ypp -y                                        
 > ypp                                           
-> cd FixSymm                                  
+> cd FixSymm  
+> yambo     
 > yambo_nl -F ../setup.in                   
 
 For more detailes of this step please see [Example 6](#example-6) **Setup calculation**.     
