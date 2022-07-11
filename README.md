@@ -534,6 +534,7 @@ After that run ypp:
 
 go to *FixSymm* directory and run setup again:
 
+> yambo     
 >  yambo_nl -F ../setup.in   
 
 ### Real time dynamics for linear response   
