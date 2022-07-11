@@ -575,7 +575,7 @@ This example is from Lumen web-site [SHG](http://www.attaccalite.com/lumen/shg_i
 
 Do [Example 6](#example-6) **Setup calculation**, and then generate input file for second harmonic calculation:
 
-> yambo_nl -u -V par -V qp -F yambo_shg.in     
+> yambo_nl -u n -V qp -F yambo_shg.in     
 
 where -V qp means quasy-particle correction (by GW or by scissor correction)   
 and -V par asks to generate parameters for parallelization
