@@ -229,7 +229,11 @@ and change the response block to 6-10 Ry:
 NGsBlkXp= 6                Ry    # [Xp] Response block size
 ```
 
-The detailed description of the example is [here](Example_02/YAMBO_Tutorial-3.1_GW_Band_Structure.pdf)
+The detailed description of the example is [here](Example_02/YAMBO_Tutorial-3.1_GW_Band_Structure.pdf)      
+
+All parameters description [Yambo-Cheatsheet.pdf](Example_02/Yambo-Cheatsheet-5.0.pdf)   
+
+Yambo GW convergense [test](https://www.yambo-code.eu/wiki/index.php/GW_tutorial._Convergence_and_approximations_(BN))
 
 To run GW calculation (calculation time is 3m):
 
