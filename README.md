@@ -221,7 +221,7 @@ The directory with input files for this example is [Example_02](Example_02)
 
 Create input file for GW calculation:
 
-> yambo -x -g n -p p -F yambo_gw.in 
+> yambo -x -g n -p p -V qp -Q -F yambo_gw.in 
 
 and change the response block to 6-10 Ry:
 
