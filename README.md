@@ -298,7 +298,7 @@ and insert the k-points path:
 
 or use automatic k-pathway generation:
 ```
-BANDS_path= "G K M G A H L A"                   # High-Symmetry points labels (G,M,K,L...) also using composed positions (0.5xY+0.5xL).
+BANDS_path= "G K M G"                   # High-Symmetry points labels (G,M,K,L...) also using composed positions (0.5xY+0.5xL).
 ```
 
 In order to generate the correct k-point pathway corresponding to the initial axes see [Calculate band structure using QE](https://github.com/Dmitry-Skachkov/QE_examples#band-structure-calculation-in-qe)    
