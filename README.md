@@ -365,7 +365,7 @@ Yambo code has several levels of paralelization. The parameters for paralelizati
 
 ```
 NLogCPUs = 10                 # [PARALLEL] Live-timing CPU`s (0 for all)
-PAR_def_mode= "workload"      # [PARALLEL] Default distribution mode ("balanced"/"memory"/"workload")
+PAR_def_mode= "balanced"      # [PARALLEL] Default distribution mode ("balanced"/"memory"/"workload")
 
 DIP_CPU= "2 10 24"            # [PARALLEL Dipoles] CPUs for each role
 DIP_ROLEs= "k c v"            # [PARALLEL Dipoles] CPUs roles (k,c,v)
@@ -669,7 +669,8 @@ Submit the job for calculation:
 Calculation time is 1h for "workload" and 1h40m for "balanced" parallel distribution on 8 nodes with 48 cores.   
 
 ```
-PAR_def_mode= "workload"      # [PARALLEL] Default distribution mode ("balanced"/"memory"/"workload")
+NLogCPUs = 10                 # [PARALLEL] Live-timing CPU`s (0 for all)
+PAR_def_mode= "balanced"      # [PARALLEL] Default distribution mode ("balanced"/"memory"/"workload")
 ```
 
 After the calculation the folder SAVE will contain:
@@ -715,7 +716,7 @@ GfnQPdb= "E < SAVE/ndb.QP"       # [EXTQP G] Database action
 And add the parameters for parallel distribution:
 ```
 NLogCPUs = 10                 # [PARALLEL] Live-timing CPU`s (0 for all)
-PAR_def_mode= "workload"      # [PARALLEL] Default distribution mode ("balanced"/"memory"/"workload")
+PAR_def_mode= "balanced"      # [PARALLEL] Default distribution mode ("balanced"/"memory"/"workload")
 ```
 
 Submit the calculation for real time dynamics to calculate linear response (calc. time 1h30m):   
